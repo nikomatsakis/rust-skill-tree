@@ -1,0 +1,327 @@
+[graphviz]
+rankdir = "TD"
+
+[doc]
+columns = ["emoji"]
+
+[doc.defaults]
+emoji = ""
+
+[[group]]
+name = "mir-library"
+label = "MIR libraries"
+description = [
+  "Semi-stable libraries to represent MIR",
+]
+items = [
+  { label = "MIR" },
+  { label = "Chalk" },
+  { label = "Polonius" },
+  { label = "Ty" },
+]
+
+[[group]]
+name = "compiler-architecture"
+label = "Extensible compiler architecture"
+requires = [
+  "mir-library",
+]
+description = [
+  "Rust libraries can export custom lints",
+  "Procedural macros have access to type information",
+]
+items = [
+  { label = "" },
+]
+
+[[group]]
+name = "async-fundamentals"
+label = "Async fundamentals"
+requires = [
+  "mir-library",  
+  "empowered-dyn",
+]
+description = [
+  "Async fn available everywhere",
+]
+items = [
+  { label = "Type alias impl trait (TAIT)" },
+  { label = "Return position impl trait in traits (RPITIT)" },
+  { label = "Generic associated types" },
+  { label = "Async fn in static traits" },
+  { label = "Empowered dyn traits" },
+  { label = "Async drop" },
+]
+
+[[group]]
+name = "empowered-dyn"
+label = "Empowered dyn traits"
+requires = [
+]
+description = [
+  "Dyn trait is available for most traits",
+]
+items = [
+  { label = "APIT, RPIT in dyn trait" },
+  { label = "`fn(self)` in dyn trait" },
+  { label = "clone in dyn trait" },
+  { label = "Async fn in dyn traits" },
+  { label = "Async drop in dyn traits" },
+]
+
+[[group]]
+name = "async-portability"
+label = "Async portability"
+requires = [
+  "threaded-contexts",
+  "async-fundamentals",
+]
+description = [
+  "Can use library without thinking about runtime",
+  "Can get started with async rust without thinking about runtime",
+  "Can easily change to a specialized runtime",
+  "Can create a specialized or experimental runtime that works with most code",
+]
+items = [
+  { label = "I/O traits" },
+]
+
+[[group]]
+name = "threaded-contexts"
+label = "Threaded contexts"
+requires = [
+]
+description = [
+  "Can easily thread context information where it is needed",
+]
+items = [
+]
+
+[[group]]
+name = "comparable-learning-curve"
+label = "Rust learning curve is comparable to Java"
+requires = [
+  "quality-debugger",
+  "async-fundamentals",
+]
+description = [
+  "Time to be highly productive is measured in months",
+]
+items = [
+]
+
+[[group]]
+name = "quality-debugger"
+label = "Quality Rust debugger"
+requires = [
+]
+description = [
+]
+items = [
+  { label="Accurate debuginfo" },
+  { label="Debuggers understand Rust collections and other types" },
+  { label="Debuggers understand async Rust concepts" },
+]
+
+[[group]]
+name = "correctness-in-dev"
+label = "Able to fix correctness problems that arise in development"
+requires = [
+  "quality-debugger",
+]
+description = [
+]
+items = [
+]
+
+[[group]]
+name = "correctness-in-prod"
+label = "Able to fix correctness problems that arise in production"
+requires = [
+  "correctness-in-dev",
+  "observability-in-prod",
+]
+description = [
+]
+items = [
+]
+
+[[group]]
+name = "observability-in-dev"
+label = "Observability into Rust during development"
+requires = [
+]
+description = [
+]
+items = [
+  { label="Tokio console" },
+]
+
+[[group]]
+name = "performance-in-dev"
+label = "Able to fix performance problems that arise in development"
+requires = [
+  "observability-in-dev",
+]
+description = [
+]
+items = [
+]
+
+[[group]]
+name = "performance-in-prod"
+label = "Able to fix performance problems that arise in production"
+requires = [
+  "observability-in-prod",
+]
+description = [
+]
+items = [
+]
+
+[[group]]
+name = "observability-in-prod"
+label = "Observability into Rust in production"
+requires = [
+  "observability-in-dev",
+]
+description = [
+]
+items = [
+]
+
+[[group]]
+name = "async-observability-in-prod"
+label = "Observability into async Rust in production"
+requires = [
+  "observability-in-prod",
+]
+description = [
+  "",
+]
+items = [
+]
+
+[[group]]
+name = "building-internet-services"
+label = "Rust a common choice for building internet platforms"
+requires = [
+  "comparable-learning-curve",
+]
+description = [
+  "",
+]
+items = [
+]
+
+[[group]]
+name = "well-integrated-into-internet-services"
+label = "Rust is well integrated into internet services"
+requires = [
+  "comparable-learning-curve",
+]
+description = [
+  "SDKs for interacting with web services are readily available and complete",
+  "FaaS platforms have first-class, convenient support for Rust",
+]
+items = [
+]
+
+[[group]]
+name = "using-internet-services"
+label = "Rust a common choice for code that runs on internet platforms"
+requires = [
+  "comparable-learning-curve",
+  "well-integrated-into-internet-services",
+]
+description = [
+  "",
+]
+items = [
+]
+
+[[group]]
+name = "reduced-operating-costs"
+label = "Operating costs and carbon impact are reduced"
+requires = [
+  "using-internet-services",
+  "building-internet-services",
+]
+description = [
+  "",
+]
+items = [
+]
+
+[[group]]
+name = "patina"
+label = "Formalized Rust semantics for Patina"
+requires = [
+  "mir-library",
+]
+description = [
+  "",
+]
+items = [
+]
+
+[[group]]
+name = "ucg"
+label = "unsafe code guidelines"
+requires = [
+  "patina",
+]
+description = [
+  "",
+]
+items = [
+]
+
+[[group]]
+name = "formal-methods-tooling"
+label = "formal methods tooling"
+requires = [
+  "patina",
+]
+description = [
+  "",
+]
+items = [
+]
+
+[[group]]
+name = "crabcake"
+label = "crabcake: dynamic validation tool"
+requires = [
+  "ucg",
+]
+description = [
+  "",
+]
+items = [
+]
+
+[[group]]
+name = "crates-io-validation"
+label = "crates.io validation"
+requires = [
+  "crabcake",
+]
+description = [
+  "",
+]
+items = [
+]
+
+[[group]]
+name = "reduced-vulnerabilities"
+label = "Reduced rate of vulnerabilities and high priority errors"
+requires = [
+  "crates-io-validation",
+  "building-internet-services",
+]
+description = [
+  "",
+]
+items = [
+]
