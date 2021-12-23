@@ -1,0 +1,251 @@
+digraph g {
+graph [ rankdir = "TD" ];
+node [ fontsize="16", shape = "ellipse" ];
+edge [ ];
+"mir-library" [
+  label = <<table>
+    <tr><td bgcolor="darkgoldenrod" colspan="2">MIR libraries</td></tr>
+    <tr><td bgcolor="darkgoldenrod1" colspan="2">Semi-stable libraries to represent MIR</td></tr>
+    <tr><td bgcolor="cornsilk"></td><td bgcolor="cornsilk">MIR</td></tr>
+    <tr><td bgcolor="cornsilk"></td><td bgcolor="cornsilk">Chalk</td></tr>
+    <tr><td bgcolor="cornsilk"></td><td bgcolor="cornsilk">Polonius</td></tr>
+    <tr><td bgcolor="cornsilk"></td><td bgcolor="cornsilk">Ty</td></tr>
+  </table>>
+  shape = "none"
+  margin = 0
+]
+"compiler-architecture" [
+  label = <<table>
+    <tr><td bgcolor="darkgoldenrod" colspan="2">Extensible compiler architecture</td></tr>
+    <tr><td bgcolor="darkgoldenrod1" colspan="2">Rust libraries can export custom lints</td></tr>
+    <tr><td bgcolor="darkgoldenrod1" colspan="2">Procedural macros have access to type information</td></tr>
+    <tr><td bgcolor="cornsilk"></td><td bgcolor="cornsilk"></td></tr>
+  </table>>
+  shape = "none"
+  margin = 0
+]
+"async-fundamentals" [
+  label = <<table>
+    <tr><td bgcolor="darkgoldenrod" colspan="2">Async fundamentals</td></tr>
+    <tr><td bgcolor="darkgoldenrod1" colspan="2">Async fn available everywhere</td></tr>
+    <tr><td bgcolor="cornsilk"></td><td bgcolor="cornsilk">Type alias impl trait (TAIT)</td></tr>
+    <tr><td bgcolor="cornsilk"></td><td bgcolor="cornsilk">Return position impl trait in traits (RPITIT)</td></tr>
+    <tr><td bgcolor="cornsilk"></td><td bgcolor="cornsilk">Generic associated types</td></tr>
+    <tr><td bgcolor="cornsilk"></td><td bgcolor="cornsilk">Async fn in static traits</td></tr>
+    <tr><td bgcolor="cornsilk"></td><td bgcolor="cornsilk">Empowered dyn traits</td></tr>
+    <tr><td bgcolor="cornsilk"></td><td bgcolor="cornsilk">Async drop</td></tr>
+  </table>>
+  shape = "none"
+  margin = 0
+]
+"empowered-dyn" [
+  label = <<table>
+    <tr><td bgcolor="darkgoldenrod" colspan="2">Empowered dyn traits</td></tr>
+    <tr><td bgcolor="darkgoldenrod1" colspan="2">Dyn trait is available for most traits</td></tr>
+    <tr><td bgcolor="cornsilk"></td><td bgcolor="cornsilk">APIT, RPIT in dyn trait</td></tr>
+    <tr><td bgcolor="cornsilk"></td><td bgcolor="cornsilk">`fn(self)` in dyn trait</td></tr>
+    <tr><td bgcolor="cornsilk"></td><td bgcolor="cornsilk">clone in dyn trait</td></tr>
+    <tr><td bgcolor="cornsilk"></td><td bgcolor="cornsilk">Async fn in dyn traits</td></tr>
+    <tr><td bgcolor="cornsilk"></td><td bgcolor="cornsilk">Async drop in dyn traits</td></tr>
+  </table>>
+  shape = "none"
+  margin = 0
+]
+"async-portability" [
+  label = <<table>
+    <tr><td bgcolor="darkgoldenrod" colspan="2">Async portability</td></tr>
+    <tr><td bgcolor="darkgoldenrod1" colspan="2">Can use library without thinking about runtime</td></tr>
+    <tr><td bgcolor="darkgoldenrod1" colspan="2">Can get started with async rust without thinking about runtime</td></tr>
+    <tr><td bgcolor="darkgoldenrod1" colspan="2">Can easily change to a specialized runtime</td></tr>
+    <tr><td bgcolor="darkgoldenrod1" colspan="2">Can create a specialized or experimental runtime that works with most code</td></tr>
+    <tr><td bgcolor="cornsilk"></td><td bgcolor="cornsilk">I/O traits</td></tr>
+  </table>>
+  shape = "none"
+  margin = 0
+]
+"threaded-contexts" [
+  label = <<table>
+    <tr><td bgcolor="darkgoldenrod" colspan="2">Threaded contexts</td></tr>
+    <tr><td bgcolor="darkgoldenrod1" colspan="2">Can easily thread context information where it is needed</td></tr>
+  </table>>
+  shape = "none"
+  margin = 0
+]
+"comparable-learning-curve" [
+  label = <<table>
+    <tr><td bgcolor="darkgoldenrod" colspan="2">Rust learning curve is comparable to Java</td></tr>
+    <tr><td bgcolor="darkgoldenrod1" colspan="2">Time to be highly productive is measured in months</td></tr>
+  </table>>
+  shape = "none"
+  margin = 0
+]
+"quality-debugger" [
+  label = <<table>
+    <tr><td bgcolor="darkgoldenrod" colspan="2">Quality Rust debugger</td></tr>
+    <tr><td bgcolor="cornsilk"></td><td bgcolor="cornsilk">Accurate debuginfo</td></tr>
+    <tr><td bgcolor="cornsilk"></td><td bgcolor="cornsilk">Debuggers understand Rust collections and other types</td></tr>
+    <tr><td bgcolor="cornsilk"></td><td bgcolor="cornsilk">Debuggers understand async Rust concepts</td></tr>
+  </table>>
+  shape = "none"
+  margin = 0
+]
+"correctness-in-dev" [
+  label = <<table>
+    <tr><td bgcolor="darkgoldenrod" colspan="2">Able to fix correctness problems that arise in development</td></tr>
+  </table>>
+  shape = "none"
+  margin = 0
+]
+"correctness-in-prod" [
+  label = <<table>
+    <tr><td bgcolor="darkgoldenrod" colspan="2">Able to fix correctness problems that arise in production</td></tr>
+  </table>>
+  shape = "none"
+  margin = 0
+]
+"observability-in-dev" [
+  label = <<table>
+    <tr><td bgcolor="darkgoldenrod" colspan="2">Observability into Rust during development</td></tr>
+    <tr><td bgcolor="cornsilk"></td><td bgcolor="cornsilk">Tokio console</td></tr>
+  </table>>
+  shape = "none"
+  margin = 0
+]
+"performance-in-dev" [
+  label = <<table>
+    <tr><td bgcolor="darkgoldenrod" colspan="2">Able to fix performance problems that arise in development</td></tr>
+  </table>>
+  shape = "none"
+  margin = 0
+]
+"performance-in-prod" [
+  label = <<table>
+    <tr><td bgcolor="darkgoldenrod" colspan="2">Able to fix performance problems that arise in production</td></tr>
+  </table>>
+  shape = "none"
+  margin = 0
+]
+"observability-in-prod" [
+  label = <<table>
+    <tr><td bgcolor="darkgoldenrod" colspan="2">Observability into Rust in production</td></tr>
+  </table>>
+  shape = "none"
+  margin = 0
+]
+"async-observability-in-prod" [
+  label = <<table>
+    <tr><td bgcolor="darkgoldenrod" colspan="2">Observability into async Rust in production</td></tr>
+    <tr><td bgcolor="darkgoldenrod1" colspan="2"></td></tr>
+  </table>>
+  shape = "none"
+  margin = 0
+]
+"building-internet-services" [
+  label = <<table>
+    <tr><td bgcolor="darkgoldenrod" colspan="2">Rust a common choice for building internet platforms</td></tr>
+    <tr><td bgcolor="darkgoldenrod1" colspan="2"></td></tr>
+  </table>>
+  shape = "none"
+  margin = 0
+]
+"well-integrated-into-internet-services" [
+  label = <<table>
+    <tr><td bgcolor="darkgoldenrod" colspan="2">Rust is well integrated into internet services</td></tr>
+    <tr><td bgcolor="darkgoldenrod1" colspan="2">SDKs for interacting with web services are readily available and complete</td></tr>
+    <tr><td bgcolor="darkgoldenrod1" colspan="2">FaaS platforms have first-class, convenient support for Rust</td></tr>
+  </table>>
+  shape = "none"
+  margin = 0
+]
+"using-internet-services" [
+  label = <<table>
+    <tr><td bgcolor="darkgoldenrod" colspan="2">Rust a common choice for code that runs on internet platforms</td></tr>
+    <tr><td bgcolor="darkgoldenrod1" colspan="2"></td></tr>
+  </table>>
+  shape = "none"
+  margin = 0
+]
+"reduced-operating-costs" [
+  label = <<table>
+    <tr><td bgcolor="darkgoldenrod" colspan="2">Operating costs and carbon impact are reduced</td></tr>
+    <tr><td bgcolor="darkgoldenrod1" colspan="2"></td></tr>
+  </table>>
+  shape = "none"
+  margin = 0
+]
+"patina" [
+  label = <<table>
+    <tr><td bgcolor="darkgoldenrod" colspan="2">Formalized Rust semantics for Patina</td></tr>
+    <tr><td bgcolor="darkgoldenrod1" colspan="2"></td></tr>
+  </table>>
+  shape = "none"
+  margin = 0
+]
+"ucg" [
+  label = <<table>
+    <tr><td bgcolor="darkgoldenrod" colspan="2">unsafe code guidelines</td></tr>
+    <tr><td bgcolor="darkgoldenrod1" colspan="2"></td></tr>
+  </table>>
+  shape = "none"
+  margin = 0
+]
+"formal-methods-tooling" [
+  label = <<table>
+    <tr><td bgcolor="darkgoldenrod" colspan="2">formal methods tooling</td></tr>
+    <tr><td bgcolor="darkgoldenrod1" colspan="2"></td></tr>
+  </table>>
+  shape = "none"
+  margin = 0
+]
+"crabcake" [
+  label = <<table>
+    <tr><td bgcolor="darkgoldenrod" colspan="2">crabcake: dynamic validation tool</td></tr>
+    <tr><td bgcolor="darkgoldenrod1" colspan="2"></td></tr>
+  </table>>
+  shape = "none"
+  margin = 0
+]
+"crates-io-validation" [
+  label = <<table>
+    <tr><td bgcolor="darkgoldenrod" colspan="2">crates.io validation</td></tr>
+    <tr><td bgcolor="darkgoldenrod1" colspan="2"></td></tr>
+  </table>>
+  shape = "none"
+  margin = 0
+]
+"reduced-vulnerabilities" [
+  label = <<table>
+    <tr><td bgcolor="darkgoldenrod" colspan="2">Reduced rate of vulnerabilities and high priority errors</td></tr>
+    <tr><td bgcolor="darkgoldenrod1" colspan="2"></td></tr>
+  </table>>
+  shape = "none"
+  margin = 0
+]
+"mir-library" -> "compiler-architecture";
+"mir-library" -> "async-fundamentals";
+"empowered-dyn" -> "async-fundamentals";
+"threaded-contexts" -> "async-portability";
+"async-fundamentals" -> "async-portability";
+"quality-debugger" -> "comparable-learning-curve";
+"async-fundamentals" -> "comparable-learning-curve";
+"quality-debugger" -> "correctness-in-dev";
+"correctness-in-dev" -> "correctness-in-prod";
+"observability-in-prod" -> "correctness-in-prod";
+"observability-in-dev" -> "performance-in-dev";
+"observability-in-prod" -> "performance-in-prod";
+"observability-in-dev" -> "observability-in-prod";
+"observability-in-prod" -> "async-observability-in-prod";
+"comparable-learning-curve" -> "building-internet-services";
+"comparable-learning-curve" -> "well-integrated-into-internet-services";
+"comparable-learning-curve" -> "using-internet-services";
+"well-integrated-into-internet-services" -> "using-internet-services";
+"using-internet-services" -> "reduced-operating-costs";
+"building-internet-services" -> "reduced-operating-costs";
+"mir-library" -> "patina";
+"patina" -> "ucg";
+"patina" -> "formal-methods-tooling";
+"ucg" -> "crabcake";
+"crabcake" -> "crates-io-validation";
+"crates-io-validation" -> "reduced-vulnerabilities";
+"building-internet-services" -> "reduced-vulnerabilities";
+}
