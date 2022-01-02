@@ -1,9 +1,8 @@
-rvd.svg: rvd.dot
-	dot -T svg rvd.dot > rvd.svg 
+skill-trees/rvd.svg: skill-trees/rvd.dot
+	dot -T svg skill-trees/rvd.dot > skill-trees/rvd.svg 
 
-rvd.dot: rvd.toml
-	skill-tree $< $@
+skill-trees/rvd.dot: skill-trees/rvd.toml ${HOME}/.cargo/bin/skill-tree
+	${HOME}/.cargo/bin/skill-tree $< $@
 
-.PHONY: setup
-setup:
+${HOME}/.cargo/bin/skill-tree:
 	cargo install skill-tree
