@@ -4,14 +4,14 @@ node [ fontsize="16", shape = "ellipse" ];
 edge [ ];
 "fundamentals" [
   label = <<table>
-    <tr><td bgcolor="darkgoldenrod" colspan="2">Rust fundamentals</td></tr>
+    <tr><td bgcolor="darkgoldenrod" colspan="2">Rust fundamenta, stals</td></tr>
     <tr><td bgcolor="darkgoldenrod1" colspan="2">Easy to contribute to the compiler</td></tr>
     <tr><td bgcolor="darkgoldenrod1" colspan="2">Language semantics well understood</td></tr>
     <tr><td bgcolor="darkgoldenrod1" colspan="2">Extending language possible by mere humans</td></tr>
-    <tr><td bgcolor="cornsilk"></td><td bgcolor="cornsilk">Compiler library-ification</td></tr>
-    <tr><td bgcolor="cornsilk"></td><td bgcolor="cornsilk">Core Rust semantics documented</td></tr>
-    <tr><td bgcolor="cornsilk"></td><td bgcolor="cornsilk">Proof of soundness</td></tr>
-    <tr><td bgcolor="cornsilk"></td><td bgcolor="cornsilk">Unsafe code guidelines</td></tr>
+    <tr><td bgcolor="cornsilk">▮▮▮▯▯</td><td bgcolor="cornsilk">Compiler libraries for MIR, types, traits</td></tr>
+    <tr><td bgcolor="cornsilk">▮▯▯▯▯</td><td bgcolor="cornsilk">Core Rust semantics documented</td></tr>
+    <tr><td bgcolor="cornsilk">▮▯▯▯▯</td><td bgcolor="cornsilk">Proof of soundness</td></tr>
+    <tr><td bgcolor="cornsilk">▮▮▯▯▯</td><td bgcolor="cornsilk">Unsafe code guidelines</td></tr>
   </table>>
   shape = "none"
   margin = 0
@@ -20,12 +20,12 @@ edge [ ];
   label = <<table>
     <tr><td bgcolor="darkgoldenrod" colspan="2">Core language improvements</td></tr>
     <tr><td bgcolor="darkgoldenrod1" colspan="2">Easy to contribute to the compiler</td></tr>
-    <tr><td bgcolor="cornsilk"></td><td bgcolor="cornsilk">Dynamic dispatch (dyn trait) more powerful, easier to use</td></tr>
-    <tr><td bgcolor="cornsilk"></td><td bgcolor="cornsilk">Specialization</td></tr>
-    <tr><td bgcolor="cornsilk"></td><td bgcolor="cornsilk">Implied bounds</td></tr>
-    <tr><td bgcolor="cornsilk"></td><td bgcolor="cornsilk">Generic associated types (GATs)</td></tr>
-    <tr><td bgcolor="cornsilk"></td><td bgcolor="cornsilk">Impl trait</td></tr>
-    <tr><td bgcolor="cornsilk"></td><td bgcolor="cornsilk">Threaded contexts, capabilities</td></tr>
+    <tr><td bgcolor="cornsilk">▮▮▯▯▯</td><td bgcolor="cornsilk">Dynamic dispatch (dyn trait) more powerful, easier to use</td></tr>
+    <tr><td bgcolor="cornsilk">▮▮▯▯▯</td><td bgcolor="cornsilk">Specialization</td></tr>
+    <tr><td bgcolor="cornsilk">▮▮▯▯▯</td><td bgcolor="cornsilk">Implied bounds</td></tr>
+    <tr><td bgcolor="cornsilk">▮▮▮▯▯</td><td bgcolor="cornsilk">Generic associated types (GATs)</td></tr>
+    <tr><td bgcolor="cornsilk">▮▮▮▮▯</td><td bgcolor="cornsilk">Impl trait</td></tr>
+    <tr><td bgcolor="cornsilk">▮▮▯▯▯</td><td bgcolor="cornsilk">Threaded contexts, capabilities</td></tr>
   </table>>
   shape = "none"
   margin = 0
@@ -38,10 +38,10 @@ edge [ ];
     <tr><td bgcolor="darkgoldenrod1" colspan="2">Access to a wide variety of useful libraries on crates.io</td></tr>
     <tr><td bgcolor="darkgoldenrod1" colspan="2">Easy to create and experiment with a specialized runtime</td></tr>
     <tr><td bgcolor="darkgoldenrod1" colspan="2">Full support for io-uring and other high performance primitives</td></tr>
-    <tr><td bgcolor="cornsilk"></td><td bgcolor="cornsilk">Can use async fn everywhere</td></tr>
-    <tr><td bgcolor="cornsilk"></td><td bgcolor="cornsilk">Async resource cleanup works well (async drop)</td></tr>
-    <tr><td bgcolor="cornsilk"></td><td bgcolor="cornsilk">Easy interoperability between runtimes</td></tr>
-    <tr><td bgcolor="cornsilk"></td><td bgcolor="cornsilk">I/O Uring support in tokio, other runtimes</td></tr>
+    <tr><td bgcolor="cornsilk">▮▮▮▯▯</td><td bgcolor="cornsilk">Can use async fn everywhere</td></tr>
+    <tr><td bgcolor="cornsilk">▮▮▯▯▯</td><td bgcolor="cornsilk">Async resource cleanup works well (async drop)</td></tr>
+    <tr><td bgcolor="cornsilk">▮▯▯▯▯</td><td bgcolor="cornsilk">Easy interoperability between runtimes</td></tr>
+    <tr><td bgcolor="cornsilk">▮▮▮▯▯</td><td bgcolor="cornsilk">I/O uring support in tokio, other runtimes</td></tr>
   </table>>
   shape = "none"
   margin = 0
@@ -50,11 +50,12 @@ edge [ ];
   label = <<table>
     <tr><td bgcolor="darkgoldenrod" colspan="2">Smooth onboarding of Rust engineers</td></tr>
     <tr><td bgcolor="darkgoldenrod1" colspan="2">Time to be highly productive is measured in months</td></tr>
-    <tr><td bgcolor="darkgoldenrod1" colspan="2">Well understood transition paths from major languages</td></tr>
-    <tr><td bgcolor="cornsilk"></td><td bgcolor="cornsilk">Can use async fn everywhere</td></tr>
-    <tr><td bgcolor="cornsilk"></td><td bgcolor="cornsilk">Java transition path</td></tr>
-    <tr><td bgcolor="cornsilk"></td><td bgcolor="cornsilk">C++ transition path</td></tr>
-    <tr><td bgcolor="cornsilk"></td><td bgcolor="cornsilk">Dynamic language transition path</td></tr>
+    <tr><td bgcolor="darkgoldenrod1" colspan="2">Clear transition paths from other major languages</td></tr>
+    <tr><td bgcolor="cornsilk">▮▮▮▮▮</td><td bgcolor="cornsilk">Rust beginner learning materials</td></tr>
+    <tr><td bgcolor="cornsilk">▮▮▮▯▯</td><td bgcolor="cornsilk">Rust intermediate learning materials</td></tr>
+    <tr><td bgcolor="cornsilk">▯▯▯▯▯</td><td bgcolor="cornsilk">Java transition path</td></tr>
+    <tr><td bgcolor="cornsilk">▮▮▯▯▯</td><td bgcolor="cornsilk">C++ transition path</td></tr>
+    <tr><td bgcolor="cornsilk">▮▮▯▯▯</td><td bgcolor="cornsilk">Dynamic language transition path</td></tr>
   </table>>
   shape = "none"
   margin = 0
@@ -62,12 +63,13 @@ edge [ ];
 "dev-tooling" [
   label = <<table>
     <tr><td bgcolor="darkgoldenrod" colspan="2">Developer tooling</td></tr>
+    <tr><td bgcolor="darkgoldenrod1" colspan="2">Able to understand programs in terms of async behavior</td></tr>
     <tr><td bgcolor="darkgoldenrod1" colspan="2">Able to fix correctness problems in development environment</td></tr>
     <tr><td bgcolor="darkgoldenrod1" colspan="2">Able to fix performance problems in development environment</td></tr>
-    <tr><td bgcolor="cornsilk"></td><td bgcolor="cornsilk">Quality Rust debugger</td></tr>
-    <tr><td bgcolor="cornsilk"></td><td bgcolor="cornsilk">Rust well integrated into common IDEs</td></tr>
-    <tr><td bgcolor="cornsilk"></td><td bgcolor="cornsilk">Async runtime observability (e.g., tokio console)</td></tr>
-    <tr><td bgcolor="cornsilk"></td><td bgcolor="cornsilk">Profilers for CPU and memory usage</td></tr>
+    <tr><td bgcolor="cornsilk">▮▮▯▯▯</td><td bgcolor="cornsilk">Quality Rust debugger</td></tr>
+    <tr><td bgcolor="cornsilk">▮▮▮▮▯</td><td bgcolor="cornsilk">Rust well integrated into common IDEs</td></tr>
+    <tr><td bgcolor="cornsilk">▮▮▮▯▯</td><td bgcolor="cornsilk">Async runtime observability (e.g., tokio console)</td></tr>
+    <tr><td bgcolor="cornsilk">▮▮▯▯▯</td><td bgcolor="cornsilk">Profilers for CPU and memory usage</td></tr>
   </table>>
   shape = "none"
   margin = 0
@@ -77,40 +79,7 @@ edge [ ];
     <tr><td bgcolor="darkgoldenrod" colspan="2">Production tooling</td></tr>
     <tr><td bgcolor="darkgoldenrod1" colspan="2">Able to troubleshoot correctness problems that arise in production</td></tr>
     <tr><td bgcolor="darkgoldenrod1" colspan="2">Able to troubleshoot performance problems that arise in production</td></tr>
-    <tr><td bgcolor="cornsilk"></td><td bgcolor="cornsilk"></td></tr>
-  </table>>
-  shape = "none"
-  margin = 0
-]
-"building-internet-services" [
-  label = <<table>
-    <tr><td bgcolor="darkgoldenrod" colspan="2">Rust a common choice for building internet platforms</td></tr>
-    <tr><td bgcolor="darkgoldenrod1" colspan="2"></td></tr>
-  </table>>
-  shape = "none"
-  margin = 0
-]
-"well-integrated-into-internet-services" [
-  label = <<table>
-    <tr><td bgcolor="darkgoldenrod" colspan="2">Rust is well integrated into internet services</td></tr>
-    <tr><td bgcolor="darkgoldenrod1" colspan="2">SDKs for interacting with web services are readily available and complete</td></tr>
-    <tr><td bgcolor="darkgoldenrod1" colspan="2">FaaS platforms have first-class, convenient support for Rust</td></tr>
-  </table>>
-  shape = "none"
-  margin = 0
-]
-"using-internet-services" [
-  label = <<table>
-    <tr><td bgcolor="darkgoldenrod" colspan="2">Rust a common choice for code that runs on internet platforms</td></tr>
-    <tr><td bgcolor="darkgoldenrod1" colspan="2"></td></tr>
-  </table>>
-  shape = "none"
-  margin = 0
-]
-"reduced-operating-costs" [
-  label = <<table>
-    <tr><td bgcolor="darkgoldenrod" colspan="2">Operating costs and carbon impact are reduced</td></tr>
-    <tr><td bgcolor="darkgoldenrod1" colspan="2"></td></tr>
+    <tr><td bgcolor="cornsilk">▯▯▯▯▯</td><td bgcolor="cornsilk"></td></tr>
   </table>>
   shape = "none"
   margin = 0
@@ -121,17 +90,40 @@ edge [ ];
     <tr><td bgcolor="darkgoldenrod1" colspan="2">Developers extending Rust with unsafe Rust can prove these extensions correct</td></tr>
     <tr><td bgcolor="darkgoldenrod1" colspan="2">Developers can prove their Rust code meets functional specifications</td></tr>
     <tr><td bgcolor="darkgoldenrod1" colspan="2">Developers can prove their Rust code meets specification</td></tr>
-    <tr><td bgcolor="cornsilk"></td><td bgcolor="cornsilk">Sanitizer / dynamic checker for unsafe code</td></tr>
-    <tr><td bgcolor="cornsilk"></td><td bgcolor="cornsilk">Model checker for Rust code</td></tr>
-    <tr><td bgcolor="cornsilk"></td><td bgcolor="cornsilk">Packages on crates.io checked</td></tr>
+    <tr><td bgcolor="cornsilk">▮▯▯▯▯</td><td bgcolor="cornsilk">Sanitizer / dynamic checker for unsafe code</td></tr>
+    <tr><td bgcolor="cornsilk">▮▯▯▯▯</td><td bgcolor="cornsilk">Model checker for Rust code</td></tr>
+    <tr><td bgcolor="cornsilk">▮▯▯▯▯</td><td bgcolor="cornsilk">Packages on crates.io checked</td></tr>
   </table>>
   shape = "none"
   margin = 0
 ]
-"reduced-vulnerabilities" [
+"well-integrated-into-internet-services" [
   label = <<table>
-    <tr><td bgcolor="darkgoldenrod" colspan="2">Reduced rate of vulnerabilities and high priority errors</td></tr>
-    <tr><td bgcolor="darkgoldenrod1" colspan="2"></td></tr>
+    <tr><td bgcolor="darkgoldenrod" colspan="2">Rust is well integrated into internet services</td></tr>
+    <tr><td bgcolor="darkgoldenrod1" colspan="2">SDKs for interacting with web services are readily available and complete</td></tr>
+    <tr><td bgcolor="darkgoldenrod1" colspan="2">FaaS platforms have first-class, convenient support for Rust</td></tr>
+    <tr><td bgcolor="cornsilk">▮▮▯▯▯</td><td bgcolor="cornsilk">First-class support in AWS</td></tr>
+    <tr><td bgcolor="cornsilk">?</td><td bgcolor="cornsilk">First-class support in Azure</td></tr>
+    <tr><td bgcolor="cornsilk">?</td><td bgcolor="cornsilk">First-class support in GCP</td></tr>
+  </table>>
+  shape = "none"
+  margin = 0
+]
+"goal-internet-services" [
+  label = <<table>
+    <tr><td bgcolor="gray64" colspan="2">🎯 Rust a common choice for internet services</td></tr>
+    <tr><td bgcolor="gray84" colspan="2">Operating costs and carbon impact are reduced</td></tr>
+    <tr><td bgcolor="gray84" colspan="2">Rate of vulnerabilities and high priority errors is reduced</td></tr>
+    <tr><td bgcolor="cornsilk">▮▮▯▯▯</td><td bgcolor="cornsilk">Rust a common choice for building internet services</td></tr>
+    <tr><td bgcolor="cornsilk">▯▯▯▯▯</td><td bgcolor="cornsilk">Rust a common choice for code that runs on internet services</td></tr>
+  </table>>
+  shape = "none"
+  margin = 0
+]
+"goal-embedded" [
+  label = <<table>
+    <tr><td bgcolor="gray64" colspan="2">🎯 Rust a common choice for embedded applications</td></tr>
+    <tr><td bgcolor="gray84" colspan="2">?</td></tr>
   </table>>
   shape = "none"
   margin = 0
@@ -142,13 +134,12 @@ edge [ ];
 "async-lang" -> "onboarding-time";
 "fundamentals" -> "dev-tooling";
 "dev-tooling" -> "prod-tooling";
-"onboarding-time" -> "building-internet-services";
-"onboarding-time" -> "well-integrated-into-internet-services";
-"onboarding-time" -> "using-internet-services";
-"well-integrated-into-internet-services" -> "using-internet-services";
-"using-internet-services" -> "reduced-operating-costs";
-"building-internet-services" -> "reduced-operating-costs";
 "fundamentals" -> "high-assurance";
-"high-assurance" -> "reduced-vulnerabilities";
-"building-internet-services" -> "reduced-vulnerabilities";
+"onboarding-time" -> "well-integrated-into-internet-services";
+"onboarding-time" -> "goal-internet-services";
+"well-integrated-into-internet-services" -> "goal-internet-services";
+"prod-tooling" -> "goal-internet-services";
+"high-assurance" -> "goal-internet-services";
+"onboarding-time" -> "goal-embedded";
+"high-assurance" -> "goal-embedded";
 }

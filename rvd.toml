@@ -2,24 +2,32 @@
 rankdir = "TD"
 
 [doc]
-columns = ["emoji"]
+columns = ["status"]
+
+[doc.emoji.status]
+"not-started" = "▯▯▯▯▯"
+"exploration" = "▮▯▯▯▯"
+"design" = "▮▮▯▯▯"
+"implementation" = "▮▮▮▯▯"
+"stabilization" = "▮▮▮▮▯"
+"done" = "▮▮▮▮▮"
 
 [doc.defaults]
-emoji = ""
+status = "not-started"
 
 [[group]]
 name = "fundamentals"
-label = "Rust fundamentals"
+label = "Rust fundamenta, stals"
 description = [
   "Easy to contribute to the compiler",
   "Language semantics well understood",
   "Extending language possible by mere humans"
 ]
 items = [
-  { label = "Compiler library-ification" },
-  { label = "Core Rust semantics documented" },
-  { label = "Proof of soundness" },
-  { label = "Unsafe code guidelines" },
+  { label = "Compiler libraries for MIR, types, traits", status = "implementation" },
+  { label = "Core Rust semantics documented", status = "exploration" },
+  { label = "Proof of soundness", status = "exploration" },
+  { label = "Unsafe code guidelines", status = "design" },
 ]
 
 [[group]]
@@ -32,12 +40,12 @@ requires = [
   "fundamentals",
 ]
 items = [
-  { label = "Dynamic dispatch (dyn trait) more powerful, easier to use" },
-  { label = "Specialization" },
-  { label = "Implied bounds" },
-  { label = "Generic associated types (GATs)" },
-  { label = "Impl trait" },
-  { label = "Threaded contexts, capabilities" },
+  { label = "Dynamic dispatch (dyn trait) more powerful, easier to use", status = "design" },
+  { label = "Specialization", status = "design" },
+  { label = "Implied bounds", status = "design" },
+  { label = "Generic associated types (GATs)", status = "implementation" },
+  { label = "Impl trait", status = "stabilization" },
+  { label = "Threaded contexts, capabilities", status = "design" },
 ]
 
 [[group]]
@@ -54,10 +62,10 @@ requires = [
   "core-lang"
 ]
 items = [
-  { label = "Can use async fn everywhere" },
-  { label = "Async resource cleanup works well (async drop)" },
-  { label = "Easy interoperability between runtimes" },
-  { label = "I/O Uring support in tokio, other runtimes" },
+  { label = "Can use async fn everywhere", status = "implementation" },
+  { label = "Async resource cleanup works well (async drop)", status = "design" },
+  { label = "Easy interoperability between runtimes", status = "exploration" },
+  { label = "I/O uring support in tokio, other runtimes", status = "implementation" },
 ]
 
 [[group]]
@@ -69,13 +77,14 @@ requires = [
 ]
 description = [
   "Time to be highly productive is measured in months",
-  "Well understood transition paths from major languages",
+  "Clear transition paths from other major languages",
 ]
 items = [
-  { label = "Can use async fn everywhere" },
-  { label = "Java transition path" },
-  { label = "C++ transition path" },
-  { label = "Dynamic language transition path" },
+  { label = "Rust beginner learning materials", status = "done" },
+  { label = "Rust intermediate learning materials", status = "implementation" },
+  { label = "Java transition path", status = "not-started" },
+  { label = "C++ transition path", status = "design" },
+  { label = "Dynamic language transition path", status = "design" },
 ]
 
 [[group]]
@@ -85,14 +94,15 @@ requires = [
   "fundamentals"
 ]
 description = [
+  "Able to understand programs in terms of async behavior",
   "Able to fix correctness problems in development environment",
   "Able to fix performance problems in development environment",
 ]
 items = [
-  { label = "Quality Rust debugger" },
-  { label = "Rust well integrated into common IDEs" },
-  { label = "Async runtime observability (e.g., tokio console)" },
-  { label = "Profilers for CPU and memory usage" },
+  { label = "Quality Rust debugger", status = "design" },
+  { label = "Rust well integrated into common IDEs", status = "stabilization" },
+  { label = "Async runtime observability (e.g., tokio console)", status = "implementation" },
+  { label = "Profilers for CPU and memory usage", status = "design" },
 ]
 
 [[group]]
@@ -110,15 +120,20 @@ items = [
 ]
 
 [[group]]
-name = "building-internet-services"
-label = "Rust a common choice for building internet platforms"
+name = "high-assurance"
+label = "High assurance Rust"
 requires = [
-  "onboarding-time",
+  "fundamentals",
 ]
 description = [
-  "",
+  "Developers extending Rust with unsafe Rust can prove these extensions correct",
+  "Developers can prove their Rust code meets functional specifications",
+  "Developers can prove their Rust code meets specification",
 ]
 items = [
+  { label = "Sanitizer / dynamic checker for unsafe code", status = "exploration" },
+  { label = "Model checker for Rust code", status = "exploration" },
+  { label = "Packages on crates.io checked", status = "exploration" }
 ]
 
 [[group]]
@@ -132,60 +147,42 @@ description = [
   "FaaS platforms have first-class, convenient support for Rust",
 ]
 items = [
+  { label = "First-class support in AWS", status = "design" },
+  { label = "First-class support in Azure", status = "?" },
+  { label = "First-class support in GCP", status = "?" },
 ]
 
 [[group]]
-name = "using-internet-services"
-label = "Rust a common choice for code that runs on internet platforms"
+name = "goal-internet-services"
+label = "🎯 Rust a common choice for internet services"
+header_color = "gray64"
+description_color = "gray84"
 requires = [
   "onboarding-time",
   "well-integrated-into-internet-services",
-]
-description = [
-  "",
-]
-items = [
-]
-
-[[group]]
-name = "reduced-operating-costs"
-label = "Operating costs and carbon impact are reduced"
-requires = [
-  "using-internet-services",
-  "building-internet-services",
-]
-description = [
-  "",
-]
-items = [
-]
-
-[[group]]
-name = "high-assurance"
-label = "High assurance Rust"
-requires = [
-  "fundamentals",
-]
-description = [
-  "Developers extending Rust with unsafe Rust can prove these extensions correct",
-  "Developers can prove their Rust code meets functional specifications",
-  "Developers can prove their Rust code meets specification",
-]
-items = [
-  { label = "Sanitizer / dynamic checker for unsafe code" },
-  { label = "Model checker for Rust code" },
-  { label = "Packages on crates.io checked" }
-]
-
-[[group]]
-name = "reduced-vulnerabilities"
-label = "Reduced rate of vulnerabilities and high priority errors"
-requires = [
+  "prod-tooling",
   "high-assurance",
-  "building-internet-services",
 ]
 description = [
-  "",
+  "Operating costs and carbon impact are reduced",
+  "Rate of vulnerabilities and high priority errors is reduced"
+]
+items = [
+  { label = "Rust a common choice for building internet services", status = "design" },
+  { label = "Rust a common choice for code that runs on internet services", status = "not-started" },
+]
+
+[[group]]
+name = "goal-embedded"
+label = "🎯 Rust a common choice for embedded applications"
+header_color = "gray64"
+description_color = "gray84"
+requires = [
+  "onboarding-time",
+  "high-assurance",
+]
+description = [
+  "?",
 ]
 items = [
 ]
