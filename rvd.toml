@@ -50,13 +50,12 @@ items = [
 
 [[group]]
 name = "async-lang"
-label = "Async I/O in Rust"
+label = "Async I/O Fundamentals"
 description = [
   "Using Async I/O comparable in complexity to Sync I/O",
   "Can author and use async libraries without thinking about runtimes",
   "Access to a wide variety of useful libraries on crates.io",
   "Easy to create and experiment with a specialized runtime",
-  "Full support for io-uring and other high performance primitives",
 ]
 requires = [
   "core-lang"
@@ -65,6 +64,24 @@ items = [
   { label = "Can use async fn everywhere", status = "implementation" },
   { label = "Async resource cleanup works well (async drop)", status = "design" },
   { label = "Easy interoperability between runtimes", status = "exploration" },
+]
+
+[[group]]
+name = "async-stack"
+label = "Async stack"
+description = [
+  "Can quickly stand up an async application",
+  "Devs able to focus on 'business logic'",
+]
+requires = [
+  "async-lang"
+]
+items = [
+  { label = "High-performance runtime(s)", status = "implementation" },
+  { label = "Logging", status = "implementation" },
+  { label = "Testing", status = "exploration" },
+  { label = "Persistence / database", status = "design" },
+  { label = "Middleware", status = "design" },
   { label = "I/O uring support in tokio, other runtimes", status = "implementation" },
 ]
 
@@ -73,7 +90,7 @@ name = "onboarding-time"
 label = "Smooth onboarding of Rust engineers"
 requires = [
   "dev-tooling",
-  "async-lang",
+  "async-stack",
 ]
 description = [
   "Time to be highly productive is measured in months",
@@ -155,8 +172,6 @@ items = [
 [[group]]
 name = "goal-internet-services"
 label = "🎯 Rust a common choice for internet services"
-header_color = "gray64"
-description_color = "gray84"
 requires = [
   "onboarding-time",
   "well-integrated-into-internet-services",
@@ -175,8 +190,6 @@ items = [
 [[group]]
 name = "goal-embedded"
 label = "🎯 Rust a common choice for embedded applications"
-header_color = "gray64"
-description_color = "gray84"
 requires = [
   "onboarding-time",
   "high-assurance",
