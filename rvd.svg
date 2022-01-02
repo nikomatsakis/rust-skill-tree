@@ -353,24 +353,24 @@
 <polygon fill="#ffb90f" stroke="transparent" points="635,-251 635,-275 1256,-275 1256,-251 635,-251"/>
 <polygon fill="none" stroke="black" points="635,-251 635,-275 1256,-275 1256,-251 635,-251"/>
 <text text-anchor="start" x="698" y="-259.2" font-family="Times,serif" font-size="16.00">FaaS platforms have first&#45;class, convenient support for Rust</text>
-<polygon fill="cornsilk" stroke="transparent" points="635,-225 635,-249 853,-249 853,-225 635,-225"/>
-<polygon fill="none" stroke="black" points="635,-225 635,-249 853,-249 853,-225 635,-225"/>
-<text text-anchor="start" x="721" y="-233.2" font-family="Times,serif" font-size="16.00">▮▮▯▯▯</text>
-<polygon fill="cornsilk" stroke="transparent" points="855,-225 855,-249 1256,-249 1256,-225 855,-225"/>
-<polygon fill="none" stroke="black" points="855,-225 855,-249 1256,-249 1256,-225 855,-225"/>
-<text text-anchor="start" x="945.5" y="-233.2" font-family="Times,serif" font-size="16.00">First&#45;class support in AWS</text>
-<polygon fill="cornsilk" stroke="transparent" points="635,-199 635,-223 853,-223 853,-199 635,-199"/>
-<polygon fill="none" stroke="black" points="635,-199 635,-223 853,-223 853,-199 635,-199"/>
-<text text-anchor="start" x="739.5" y="-207.2" font-family="Times,serif" font-size="16.00">?</text>
-<polygon fill="cornsilk" stroke="transparent" points="855,-199 855,-223 1256,-223 1256,-199 855,-199"/>
-<polygon fill="none" stroke="black" points="855,-199 855,-223 1256,-223 1256,-199 855,-199"/>
-<text text-anchor="start" x="941.5" y="-207.2" font-family="Times,serif" font-size="16.00">First&#45;class support in Azure</text>
-<polygon fill="cornsilk" stroke="transparent" points="635,-173 635,-197 853,-197 853,-173 635,-173"/>
-<polygon fill="none" stroke="black" points="635,-173 635,-197 853,-197 853,-173 635,-173"/>
-<text text-anchor="start" x="739.5" y="-181.2" font-family="Times,serif" font-size="16.00">?</text>
-<polygon fill="cornsilk" stroke="transparent" points="855,-173 855,-197 1256,-197 1256,-173 855,-173"/>
-<polygon fill="none" stroke="black" points="855,-173 855,-197 1256,-197 1256,-173 855,-173"/>
-<text text-anchor="start" x="947.5" y="-181.2" font-family="Times,serif" font-size="16.00">First&#45;class support in GCP</text>
+<polygon fill="cornsilk" stroke="transparent" points="635,-225 635,-249 874,-249 874,-225 635,-225"/>
+<polygon fill="none" stroke="black" points="635,-225 635,-249 874,-249 874,-225 635,-225"/>
+<text text-anchor="start" x="731.5" y="-233.2" font-family="Times,serif" font-size="16.00">▮▮▯▯▯</text>
+<polygon fill="cornsilk" stroke="transparent" points="876,-225 876,-249 1256,-249 1256,-225 876,-225"/>
+<polygon fill="none" stroke="black" points="876,-225 876,-249 1256,-249 1256,-225 876,-225"/>
+<text text-anchor="start" x="956" y="-233.2" font-family="Times,serif" font-size="16.00">First&#45;class support in AWS</text>
+<polygon fill="cornsilk" stroke="transparent" points="635,-199 635,-223 874,-223 874,-199 635,-199"/>
+<polygon fill="none" stroke="black" points="635,-199 635,-223 874,-223 874,-199 635,-199"/>
+<text text-anchor="start" x="710.5" y="-207.2" font-family="Times,serif" font-size="16.00">(not sure!)</text>
+<polygon fill="cornsilk" stroke="transparent" points="876,-199 876,-223 1256,-223 1256,-199 876,-199"/>
+<polygon fill="none" stroke="black" points="876,-199 876,-223 1256,-223 1256,-199 876,-199"/>
+<text text-anchor="start" x="952" y="-207.2" font-family="Times,serif" font-size="16.00">First&#45;class support in Azure</text>
+<polygon fill="cornsilk" stroke="transparent" points="635,-173 635,-197 874,-197 874,-173 635,-173"/>
+<polygon fill="none" stroke="black" points="635,-173 635,-197 874,-197 874,-173 635,-173"/>
+<text text-anchor="start" x="710.5" y="-181.2" font-family="Times,serif" font-size="16.00">(not sure!)</text>
+<polygon fill="cornsilk" stroke="transparent" points="876,-173 876,-197 1256,-197 1256,-173 876,-173"/>
+<polygon fill="none" stroke="black" points="876,-173 876,-197 1256,-197 1256,-173 876,-173"/>
+<text text-anchor="start" x="958" y="-181.2" font-family="Times,serif" font-size="16.00">First&#45;class support in GCP</text>
 <polygon fill="none" stroke="black" points="631.5,-170 631.5,-330 1258.5,-330 1258.5,-170 631.5,-170"/>
 </g>
 <!-- onboarding&#45;time&#45;&gt;well&#45;integrated&#45;into&#45;internet&#45;services -->

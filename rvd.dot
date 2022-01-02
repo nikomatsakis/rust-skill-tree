@@ -116,8 +116,8 @@ edge [ ];
     <tr><td bgcolor="darkgoldenrod1" colspan="2">SDKs for interacting with web services are readily available and complete</td></tr>
     <tr><td bgcolor="darkgoldenrod1" colspan="2">FaaS platforms have first-class, convenient support for Rust</td></tr>
     <tr><td bgcolor="cornsilk">▮▮▯▯▯</td><td bgcolor="cornsilk">First-class support in AWS</td></tr>
-    <tr><td bgcolor="cornsilk">?</td><td bgcolor="cornsilk">First-class support in Azure</td></tr>
-    <tr><td bgcolor="cornsilk">?</td><td bgcolor="cornsilk">First-class support in GCP</td></tr>
+    <tr><td bgcolor="cornsilk">(not sure!)</td><td bgcolor="cornsilk">First-class support in Azure</td></tr>
+    <tr><td bgcolor="cornsilk">(not sure!)</td><td bgcolor="cornsilk">First-class support in GCP</td></tr>
   </table>>
   shape = "none"
   margin = 0
