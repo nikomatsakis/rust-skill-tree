@@ -8,205 +8,112 @@ columns = ["emoji"]
 emoji = ""
 
 [[group]]
-name = "mir-library"
-label = "MIR libraries"
+name = "fundamentals"
+label = "Rust fundamentals"
 description = [
-  "Semi-stable libraries to represent MIR",
+  "Easy to contribute to the compiler",
+  "Language semantics well understood",
+  "Extending language possible by mere humans"
 ]
 items = [
-  { label = "MIR" },
-  { label = "Chalk" },
-  { label = "Polonius" },
-  { label = "Ty" },
+  { label = "Compiler library-ification" },
+  { label = "Core Rust semantics documented" },
+  { label = "Proof of soundness" },
+  { label = "Unsafe code guidelines" },
 ]
 
 [[group]]
-name = "compiler-architecture"
-label = "Extensible compiler architecture"
+name = "core-lang"
+label = "Core language improvements"
+description = [
+  "Easy to contribute to the compiler",
+]
 requires = [
-  "mir-library",
+  "fundamentals",
+]
+items = [
+  { label = "Dynamic dispatch (dyn trait) more powerful, easier to use" },
+  { label = "Specialization" },
+  { label = "Implied bounds" },
+  { label = "Generic associated types (GATs)" },
+  { label = "Impl trait" },
+  { label = "Threaded contexts, capabilities" },
+]
+
+[[group]]
+name = "async-lang"
+label = "Async I/O in Rust"
+description = [
+  "Using Async I/O comparable in complexity to Sync I/O",
+  "Can author and use async libraries without thinking about runtimes",
+  "Access to a wide variety of useful libraries on crates.io",
+  "Easy to create and experiment with a specialized runtime",
+  "Full support for io-uring and other high performance primitives",
+]
+requires = [
+  "core-lang"
+]
+items = [
+  { label = "Can use async fn everywhere" },
+  { label = "Async resource cleanup works well (async drop)" },
+  { label = "Easy interoperability between runtimes" },
+  { label = "I/O Uring support in tokio, other runtimes" },
+]
+
+[[group]]
+name = "onboarding-time"
+label = "Smooth onboarding of Rust engineers"
+requires = [
+  "dev-tooling",
+  "async-lang",
 ]
 description = [
-  "Rust libraries can export custom lints",
-  "Procedural macros have access to type information",
+  "Time to be highly productive is measured in months",
+  "Well understood transition paths from major languages",
+]
+items = [
+  { label = "Can use async fn everywhere" },
+  { label = "Java transition path" },
+  { label = "C++ transition path" },
+  { label = "Dynamic language transition path" },
+]
+
+[[group]]
+name = "dev-tooling"
+label = "Developer tooling"
+requires = [
+  "fundamentals"
+]
+description = [
+  "Able to fix correctness problems in development environment",
+  "Able to fix performance problems in development environment",
+]
+items = [
+  { label = "Quality Rust debugger" },
+  { label = "Rust well integrated into common IDEs" },
+  { label = "Async runtime observability (e.g., tokio console)" },
+  { label = "Profilers for CPU and memory usage" },
+]
+
+[[group]]
+name = "prod-tooling"
+label = "Production tooling"
+requires = [
+  "dev-tooling",
+]
+description = [
+  "Able to troubleshoot correctness problems that arise in production",
+  "Able to troubleshoot performance problems that arise in production",
 ]
 items = [
   { label = "" },
 ]
 
 [[group]]
-name = "async-fundamentals"
-label = "Async fundamentals"
-requires = [
-  "mir-library",  
-  "empowered-dyn",
-]
-description = [
-  "Async fn available everywhere",
-]
-items = [
-  { label = "Type alias impl trait (TAIT)" },
-  { label = "Return position impl trait in traits (RPITIT)" },
-  { label = "Generic associated types" },
-  { label = "Async fn in static traits" },
-  { label = "Empowered dyn traits" },
-  { label = "Async drop" },
-]
-
-[[group]]
-name = "empowered-dyn"
-label = "Empowered dyn traits"
-requires = [
-]
-description = [
-  "Dyn trait is available for most traits",
-]
-items = [
-  { label = "APIT, RPIT in dyn trait" },
-  { label = "`fn(self)` in dyn trait" },
-  { label = "clone in dyn trait" },
-  { label = "Async fn in dyn traits" },
-  { label = "Async drop in dyn traits" },
-]
-
-[[group]]
-name = "async-portability"
-label = "Async portability"
-requires = [
-  "threaded-contexts",
-  "async-fundamentals",
-]
-description = [
-  "Can use library without thinking about runtime",
-  "Can get started with async rust without thinking about runtime",
-  "Can easily change to a specialized runtime",
-  "Can create a specialized or experimental runtime that works with most code",
-]
-items = [
-  { label = "I/O traits" },
-]
-
-[[group]]
-name = "threaded-contexts"
-label = "Threaded contexts"
-requires = [
-]
-description = [
-  "Can easily thread context information where it is needed",
-]
-items = [
-]
-
-[[group]]
-name = "comparable-learning-curve"
-label = "Rust learning curve is comparable to Java"
-requires = [
-  "quality-debugger",
-  "async-fundamentals",
-]
-description = [
-  "Time to be highly productive is measured in months",
-]
-items = [
-]
-
-[[group]]
-name = "quality-debugger"
-label = "Quality Rust debugger"
-requires = [
-]
-description = [
-]
-items = [
-  { label="Accurate debuginfo" },
-  { label="Debuggers understand Rust collections and other types" },
-  { label="Debuggers understand async Rust concepts" },
-]
-
-[[group]]
-name = "correctness-in-dev"
-label = "Able to fix correctness problems that arise in development"
-requires = [
-  "quality-debugger",
-]
-description = [
-]
-items = [
-]
-
-[[group]]
-name = "correctness-in-prod"
-label = "Able to fix correctness problems that arise in production"
-requires = [
-  "correctness-in-dev",
-  "observability-in-prod",
-]
-description = [
-]
-items = [
-]
-
-[[group]]
-name = "observability-in-dev"
-label = "Observability into Rust during development"
-requires = [
-]
-description = [
-]
-items = [
-  { label="Tokio console" },
-]
-
-[[group]]
-name = "performance-in-dev"
-label = "Able to fix performance problems that arise in development"
-requires = [
-  "observability-in-dev",
-]
-description = [
-]
-items = [
-]
-
-[[group]]
-name = "performance-in-prod"
-label = "Able to fix performance problems that arise in production"
-requires = [
-  "observability-in-prod",
-]
-description = [
-]
-items = [
-]
-
-[[group]]
-name = "observability-in-prod"
-label = "Observability into Rust in production"
-requires = [
-  "observability-in-dev",
-]
-description = [
-]
-items = [
-]
-
-[[group]]
-name = "async-observability-in-prod"
-label = "Observability into async Rust in production"
-requires = [
-  "observability-in-prod",
-]
-description = [
-  "",
-]
-items = [
-]
-
-[[group]]
 name = "building-internet-services"
 label = "Rust a common choice for building internet platforms"
 requires = [
-  "comparable-learning-curve",
+  "onboarding-time",
 ]
 description = [
   "",
@@ -218,7 +125,7 @@ items = [
 name = "well-integrated-into-internet-services"
 label = "Rust is well integrated into internet services"
 requires = [
-  "comparable-learning-curve",
+  "onboarding-time",
 ]
 description = [
   "SDKs for interacting with web services are readily available and complete",
@@ -231,7 +138,7 @@ items = [
 name = "using-internet-services"
 label = "Rust a common choice for code that runs on internet platforms"
 requires = [
-  "comparable-learning-curve",
+  "onboarding-time",
   "well-integrated-into-internet-services",
 ]
 description = [
@@ -254,70 +161,27 @@ items = [
 ]
 
 [[group]]
-name = "patina"
-label = "Formalized Rust semantics for Patina"
+name = "high-assurance"
+label = "High assurance Rust"
 requires = [
-  "mir-library",
+  "fundamentals",
 ]
 description = [
-  "",
+  "Developers extending Rust with unsafe Rust can prove these extensions correct",
+  "Developers can prove their Rust code meets functional specifications",
+  "Developers can prove their Rust code meets specification",
 ]
 items = [
-]
-
-[[group]]
-name = "ucg"
-label = "unsafe code guidelines"
-requires = [
-  "patina",
-]
-description = [
-  "",
-]
-items = [
-]
-
-[[group]]
-name = "formal-methods-tooling"
-label = "formal methods tooling"
-requires = [
-  "patina",
-]
-description = [
-  "",
-]
-items = [
-]
-
-[[group]]
-name = "crabcake"
-label = "crabcake: dynamic validation tool"
-requires = [
-  "ucg",
-]
-description = [
-  "",
-]
-items = [
-]
-
-[[group]]
-name = "crates-io-validation"
-label = "crates.io validation"
-requires = [
-  "crabcake",
-]
-description = [
-  "",
-]
-items = [
+  { label = "Sanitizer / dynamic checker for unsafe code" },
+  { label = "Model checker for Rust code" },
+  { label = "Packages on crates.io checked" }
 ]
 
 [[group]]
 name = "reduced-vulnerabilities"
 label = "Reduced rate of vulnerabilities and high priority errors"
 requires = [
-  "crates-io-validation",
+  "high-assurance",
   "building-internet-services",
 ]
 description = [
