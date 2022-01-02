@@ -1,7 +1,7 @@
-skill-trees/rvd.svg: skill-trees/rvd.dot
-	dot -T svg skill-trees/rvd.dot > skill-trees/rvd.svg 
+skill-trees/main.svg: skill-trees/main.dot
+	dot -T svg skill-trees/main.dot > skill-trees/main.svg 
 
-skill-trees/rvd.dot: skill-trees/rvd.toml ${HOME}/.cargo/bin/skill-tree
+skill-trees/main.dot: skill-trees/main.toml ${HOME}/.cargo/bin/skill-tree
 	${HOME}/.cargo/bin/skill-tree $< $@
 
 ${HOME}/.cargo/bin/skill-tree:
