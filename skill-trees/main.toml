@@ -129,10 +129,23 @@ items = [
 ]
 
 [[group]]
+name = "semi-stable-apis"
+label = "Semi-stable APIs"
+requires = [
+  "extensible",
+]
+description = [
+  "Compiler offers semi-stable APIs that others can use",
+]
+items = [
+]
+
+
+[[group]]
 name = "dev-tooling"
 label = "Developer tooling"
 requires = [
-  "extensible",
+  "semi-stable-apis",
 ]
 description = [
   "Able to understand programs in terms of async behavior",
@@ -166,7 +179,7 @@ items = [
 name = "high-assurance"
 label = "High assurance Rust"
 requires = [
-  "extensible",
+  "semi-stable-apis",
 ]
 description = [
   "Developers extending Rust with unsafe Rust can prove these extensions correct",
