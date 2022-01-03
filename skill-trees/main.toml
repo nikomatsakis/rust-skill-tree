@@ -18,7 +18,7 @@ status = "not-started"
 
 [[group]]
 name = "fundamentals"
-label = "Rust fundamenta, stals"
+label = "Rust fundamentals"
 description = [
   "Easy to contribute to the compiler",
   "Language semantics well understood",
@@ -29,13 +29,32 @@ items = [
   { label = "Core Rust semantics documented", status = "exploration" },
   { label = "Proof of soundness", status = "exploration" },
   { label = "Unsafe code guidelines", status = "design" },
+  { label = "Known soundness bugs closed", status = "design" },
+]
+
+[[group]]
+name = "extensible"
+label = "Extensible Rust"
+description = [
+  "Rust language ",
+  "Language semantics well understood",
+  "Extending language possible by mere humans"
+]
+requires = [
+  "fundamentals",
+]
+items = [
+  { label = "Macro hygiene", status = "design" },
+  { label = "Libraries supply custom lints, errors", status = "not-started" },
+  { label = "", status = "exploration" },
+  { label = "Macros, lints have access to type information", status = "exploration" },
 ]
 
 [[group]]
 name = "core-lang"
 label = "Core language improvements"
 description = [
-  "Easy to contribute to the compiler",
+  "Rust language scales smoothly without 'complexity cliffs'",
 ]
 requires = [
   "fundamentals",
@@ -46,7 +65,10 @@ items = [
   { label = "Implied bounds", status = "design" },
   { label = "Generic associated types (GATs)", status = "implementation" },
   { label = "Impl trait", status = "stabilization" },
-  { label = "Threaded contexts, capabilities", status = "design" },
+  { label = "Threaded contexts, capabilities", status = "exploration" },
+  { label = "Generators", status = "exploration" },
+  { label = "Improved borrow checker", status = "exploration", href = "https://github.com/rust-lang/polonius/" },
+  { label = "View types", status = "exploration", href = "https://smallcultfollowing.com/babysteps//blog/2021/11/05/view-types/" },
 ]
 
 [[group]]
@@ -54,9 +76,8 @@ name = "async-lang"
 label = "Async I/O Fundamentals"
 description = [
   "Using Async I/O comparable in complexity to Sync I/O",
-  "Can author and use async libraries without thinking about runtimes",
   "Access to a wide variety of useful libraries on crates.io",
-  "Easy to create and experiment with a specialized runtime",
+  "Easy access to high performance networking",
 ]
 requires = [
   "core-lang"
@@ -65,6 +86,7 @@ items = [
   { label = "Can use async fn everywhere", status = "implementation" },
   { label = "Async resource cleanup works well (async drop)", status = "design" },
   { label = "Easy interoperability between runtimes", status = "exploration" },
+  { label = "Async generators", status = "exploration" },
 ]
 
 [[group]]
@@ -75,7 +97,8 @@ description = [
   "Devs able to focus on 'business logic'",
 ]
 requires = [
-  "async-lang"
+  "async-lang",
+  "extensible",
 ]
 items = [
   { label = "High-performance runtime(s)", status = "implementation" },
@@ -109,7 +132,7 @@ items = [
 name = "dev-tooling"
 label = "Developer tooling"
 requires = [
-  "fundamentals"
+  "extensible",
 ]
 description = [
   "Able to understand programs in terms of async behavior",
@@ -134,14 +157,16 @@ description = [
   "Able to troubleshoot performance problems that arise in production",
 ]
 items = [
-  { label = "" },
+  { label = "Async runtime observability", status = "?" },
+  { label = "Readable stacktraces, esp. in async", status = "design" },
+  { label = "Live, low-overhead profilers for CPU and memory usage", status = "not-started" },
 ]
 
 [[group]]
 name = "high-assurance"
 label = "High assurance Rust"
 requires = [
-  "fundamentals",
+  "extensible",
 ]
 description = [
   "Developers extending Rust with unsafe Rust can prove these extensions correct",
@@ -151,6 +176,7 @@ description = [
 items = [
   { label = "Sanitizer / dynamic checker for unsafe code", status = "exploration" },
   { label = "Model checker for Rust code", status = "exploration" },
+  { label = "Rust standard library proven sound" },
   { label = "Packages on crates.io checked", status = "exploration" }
 ]
 
