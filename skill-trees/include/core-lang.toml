@@ -8,6 +8,7 @@ name = "core-lang"
 label = "Core language improvements"
 description = [
   "Rust language scales smoothly without 'complexity cliffs'",
+  "Rust able to express the patterns more complex code needs",
 ]
 requires = [
   "fundamentals",
@@ -24,7 +25,7 @@ items = [
 name = "easy-lang"
 label = "Ergonomic language improvements"
 description = [
-  "Rust language scales smoothly without 'complexity cliffs'",
+  "Using Rust feels smooth and convenient",
 ]
 requires = [
   "core-lang",
