@@ -1,0 +1,16 @@
+
+[[group]]
+name = "prod-tooling"
+label = "Production tooling"
+requires = [
+  "dev-tooling",
+]
+description = [
+  "Able to troubleshoot correctness problems that arise in production",
+  "Able to troubleshoot performance problems that arise in production",
+]
+items = [
+  { label = "Async runtime observability", status = "?" },
+  { label = "Readable stacktraces, esp. in async", status = "design" },
+  { label = "Live, low-overhead profilers for CPU and memory usage", status = "not-started" },
+]

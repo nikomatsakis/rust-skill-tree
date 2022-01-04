@@ -1,0 +1,19 @@
+
+[[group]]
+name = "onboarding-time"
+label = "Smooth onboarding of Rust engineers"
+requires = [
+  "dev-tooling",
+  "async-stack",
+]
+description = [
+  "Time to be highly productive is measured in months",
+  "Clear transition paths from other major languages",
+]
+items = [
+  { label = "Rust beginner learning materials", status = "done" },
+  { label = "Rust intermediate learning materials", status = "implementation" },
+  { label = "Java transition path", status = "not-started" },
+  { label = "C++ transition path", status = "design" },
+  { label = "Dynamic language transition path", status = "design" },
+]

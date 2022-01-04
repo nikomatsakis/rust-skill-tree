@@ -1,0 +1,38 @@
+
+[[group]]
+name = "async-lang"
+label = "Async I/O Fundamentals"
+description = [
+  "Using Async I/O comparable in complexity to Sync I/O",
+  "Access to a wide variety of useful libraries on crates.io",
+  "Easy access to high performance networking",
+]
+requires = [
+  "core-lang"
+]
+items = [
+  { label = "Can use async fn everywhere", status = "implementation" },
+  { label = "Async resource cleanup works well (async drop)", status = "design" },
+  { label = "Easy interoperability between runtimes", status = "exploration" },
+  { label = "Async generators", status = "exploration" },
+]
+
+[[group]]
+name = "async-stack"
+label = "Async stack"
+description = [
+  "Can quickly stand up an async application",
+  "Devs able to focus on 'business logic'",
+]
+requires = [
+  "async-lang",
+  "extensible",
+]
+items = [
+  { label = "High-performance runtime(s)", status = "implementation" },
+  { label = "Logging", status = "implementation" },
+  { label = "Testing", status = "exploration" },
+  { label = "Persistence / database", status = "design" },
+  { label = "Middleware", status = "design" },
+  { label = "I/O uring support in tokio, other runtimes", status = "implementation" },
+]

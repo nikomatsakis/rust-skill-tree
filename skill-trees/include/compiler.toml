@@ -1,0 +1,31 @@
+[[group]]
+name = "fundamentals"
+label = "Rust fundamentals"
+description = [
+  "Easy to contribute to the compiler",
+  "Language semantics well understood",
+  "Extending language possible by mere humans"
+]
+items = [
+  { label = "Compiler libraries for MIR, types, traits", status = "implementation" },
+  { label = "Core Rust semantics documented", status = "exploration" },
+  { label = "Proof of soundness", status = "exploration" },
+  { label = "Unsafe code guidelines", status = "design" },
+  { label = "Known soundness bugs closed", status = "design" },
+]
+
+[[group]]
+name = "semi-stable-apis"
+label = "Semi-stable APIs"
+requires = [
+  "fundamentals",
+]
+description = [
+  "Compiler offers semi-stable APIs that others can use",
+]
+items = [
+  { label = "Shared crate for representing Rust types" },
+  { label = "Access to Rust type information and type check results" },
+  { label = "Ability to ask 'hypotheticals'" },
+  { label = "Access to the MIR for a given function" },
+]

@@ -1,0 +1,17 @@
+[[group]]
+name = "extensible"
+label = "Extensible Rust"
+description = [
+  "Rust language ",
+  "Language semantics well understood",
+  "Extending language possible by mere humans"
+]
+requires = [
+  "semi-stable-apis",
+]
+items = [
+  { label = "Macro hygiene", status = "design" },
+  { label = "Libraries supply custom lints, errors", status = "not-started" },
+  { label = "", status = "exploration" },
+  { label = "Macros, lints have access to type information", status = "exploration" },
+]

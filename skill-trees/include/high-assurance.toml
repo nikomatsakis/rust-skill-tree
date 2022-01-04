@@ -1,0 +1,18 @@
+
+[[group]]
+name = "high-assurance"
+label = "High assurance Rust"
+requires = [
+  "semi-stable-apis",
+]
+description = [
+  "Developers extending Rust with unsafe Rust can prove these extensions correct",
+  "Developers can prove their Rust code meets functional specifications",
+  "Developers can prove their Rust code meets specification",
+]
+items = [
+  { label = "Sanitizer / dynamic checker for unsafe code", status = "exploration" },
+  { label = "Model checker for Rust code", status = "exploration" },
+  { label = "Rust standard library proven sound" },
+  { label = "Packages on crates.io checked", status = "exploration" }
+]

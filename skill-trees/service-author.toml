@@ -1,0 +1,44 @@
+[graphviz]
+rankdir = "TD"
+
+[doc]
+columns = ["status"]
+include = [
+  "include/async.toml",
+  "include/compiler.toml",
+  "include/core-lang.toml",
+  "include/dev-tooling.toml",
+  "include/extensible.toml",
+  "include/high-assurance.toml",
+  "include/prod-tooling.toml",
+  "include/onboarding.toml",
+]
+
+[doc.emoji.status]
+"not-started" = "▯▯▯▯▯"
+"exploration" = "▮▯▯▯▯"
+"design" = "▮▮▯▯▯"
+"implementation" = "▮▮▮▯▯"
+"stabilization" = "▮▮▮▮▯"
+"done" = "▮▮▮▮▮"
+"?" = "(not sure!)"
+
+[doc.defaults]
+status = "not-started"
+
+[[group]]
+name = "goal-internet-services"
+label = "🎯 Rust a common choice for building internet services"
+requires = [
+  "onboarding-time",
+  "prod-tooling",
+  "high-assurance",
+]
+description = [
+  "Faster response times",
+  "Ratio of P99.99 to P50 latencies is lower",
+  "Data centers require fewer resources to sustain same level of traffic",
+  "Rate of security vulnerabilities and serious bugs is dramatically reduced",
+  "Improved employee retention and ability to recruit",
+]
+items = []

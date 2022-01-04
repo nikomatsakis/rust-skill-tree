@@ -1,0 +1,21 @@
+
+[[group]]
+name = "core-lang"
+label = "Core language improvements"
+description = [
+  "Rust language scales smoothly without 'complexity cliffs'",
+]
+requires = [
+  "fundamentals",
+]
+items = [
+  { label = "Dynamic dispatch (dyn trait) more powerful, easier to use", status = "design" },
+  { label = "Specialization", status = "design" },
+  { label = "Implied bounds", status = "design" },
+  { label = "Generic associated types (GATs)", status = "implementation" },
+  { label = "Impl trait", status = "stabilization" },
+  { label = "Threaded contexts, capabilities", status = "exploration" },
+  { label = "Generators", status = "exploration" },
+  { label = "Improved borrow checker", status = "exploration", href = "https://github.com/rust-lang/polonius/" },
+  { label = "View types", status = "exploration", href = "https://smallcultfollowing.com/babysteps//blog/2021/11/05/view-types/" },
+]

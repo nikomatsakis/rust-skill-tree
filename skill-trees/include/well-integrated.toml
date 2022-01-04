@@ -1,0 +1,16 @@
+
+[[group]]
+name = "well-integrated-into-internet-services"
+label = "Rust is well integrated into internet services"
+requires = [
+  "onboarding-time",
+]
+description = [
+  "SDKs for interacting with web services are readily available and complete",
+  "FaaS platforms have first-class, convenient support for Rust",
+]
+items = [
+  { label = "First-class support in AWS", status = "design" },
+  { label = "First-class support in Azure", status = "?" },
+  { label = "First-class support in GCP", status = "?" },
+]

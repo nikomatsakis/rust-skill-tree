@@ -1,0 +1,18 @@
+
+[[group]]
+name = "dev-tooling"
+label = "Developer tooling"
+requires = [
+  "semi-stable-apis",
+]
+description = [
+  "Able to understand programs in terms of async behavior",
+  "Able to fix correctness problems in development environment",
+  "Able to fix performance problems in development environment",
+]
+items = [
+  { label = "Quality Rust debugger", status = "design" },
+  { label = "Rust well integrated into common IDEs", status = "stabilization" },
+  { label = "Async runtime observability (e.g., tokio console)", status = "implementation" },
+  { label = "Profilers for CPU and memory usage", status = "design" },
+]
