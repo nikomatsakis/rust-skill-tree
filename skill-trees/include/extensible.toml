@@ -7,9 +7,7 @@ include = [
 name = "extensible"
 label = "Extensible Rust"
 description = [
-  "Rust language ",
-  "Language semantics well understood",
-  "Extending language possible by mere humans"
+  "Rust libraries can take control of the developer experience",
 ]
 requires = [
   "semi-stable-apis",
@@ -17,6 +15,6 @@ requires = [
 items = [
   { label = "Macro hygiene", status = "design" },
   { label = "Libraries supply custom lints, errors", status = "not-started" },
-  { label = "", status = "exploration" },
+  { label = "Libraries offering custom IDE integration (refactorings)", status = "exploration" },
   { label = "Macros, lints have access to type information", status = "exploration" },
 ]

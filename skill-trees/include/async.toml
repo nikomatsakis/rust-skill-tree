@@ -1,7 +1,6 @@
 [doc]
 include = [
   "core-lang.toml",
-  "extensible.toml",
 ]
 
 [[group]]
@@ -31,7 +30,6 @@ description = [
 ]
 requires = [
   "async-lang",
-  "extensible",
 ]
 items = [
   { label = "High-performance runtime(s)", status = "implementation" },
