@@ -12,7 +12,7 @@ description = [
   "Extending language possible by mere humans"
 ]
 items = [
-  { label = "Compiler libraries for MIR, types, traits", status = "implementation" },
+  { label = "Rearchitect traits/borrow-checking as logical predicates", status = "implementation" },
   { label = "Core Rust semantics documented", status = "exploration" },
   { label = "Proof of soundness", status = "exploration" },
   { label = "Unsafe code guidelines", status = "design" },

@@ -12,6 +12,7 @@ requires = [
   "dev-tooling",
   "async-stack",
   "extensible",
+  "easy-lang",
 ]
 description = [
   "Time to be highly productive is measured in months",
