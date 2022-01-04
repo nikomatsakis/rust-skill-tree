@@ -1,3 +1,8 @@
+[doc]
+include = [
+  "dev-tooling.toml",
+  "async.toml",
+]
 
 [[group]]
 name = "onboarding-time"

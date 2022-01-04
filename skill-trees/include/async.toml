@@ -1,3 +1,8 @@
+[doc]
+include = [
+  "core-lang.toml",
+  "extensible.toml",
+]
 
 [[group]]
 name = "async-lang"

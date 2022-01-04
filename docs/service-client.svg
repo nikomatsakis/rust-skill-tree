@@ -14,7 +14,7 @@
 <title>goal&#45;internet&#45;services</title>
 <polygon fill="darkgoldenrod" stroke="transparent" points="248,-133 248,-157 857,-157 857,-133 248,-133"/>
 <polygon fill="none" stroke="black" points="248,-133 248,-157 857,-157 857,-133 248,-133"/>
-<text text-anchor="start" x="324" y="-141.2" font-family="Times,serif" font-size="16.00">🎯 Rust a common choice for building internet services</text>
+<text text-anchor="start" x="271" y="-141.2" font-family="Times,serif" font-size="16.00">🎯 Rust a common choice for programs running on internet services</text>
 <polygon fill="#ffb90f" stroke="transparent" points="248,-107 248,-131 857,-131 857,-107 248,-107"/>
 <polygon fill="none" stroke="black" points="248,-107 248,-131 857,-131 857,-107 248,-107"/>
 <text text-anchor="start" x="461.5" y="-115.2" font-family="Times,serif" font-size="16.00">Faster response times</text>

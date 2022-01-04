@@ -9,7 +9,7 @@ include = [
 
 [[group]]
 name = "goal-internet-services"
-label = "🎯 Rust a common choice for building internet services"
+label = "🎯 Rust a common choice for programs running on internet services"
 requires = [
   "onboarding-time",
   "prod-tooling",

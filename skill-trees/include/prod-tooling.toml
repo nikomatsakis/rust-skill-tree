@@ -1,3 +1,7 @@
+[doc]
+include = [
+  "dev-tooling.toml",
+]
 
 [[group]]
 name = "prod-tooling"

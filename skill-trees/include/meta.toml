@@ -1,0 +1,14 @@
+[doc]
+columns = ["status"]
+
+[doc.emoji.status]
+"not-started" = "▯▯▯▯▯"
+"exploration" = "▮▯▯▯▯"
+"design" = "▮▮▯▯▯"
+"implementation" = "▮▮▮▯▯"
+"stabilization" = "▮▮▮▮▯"
+"done" = "▮▮▮▮▮"
+"?" = "(not sure!)"
+
+[doc.defaults]
+status = "not-started"

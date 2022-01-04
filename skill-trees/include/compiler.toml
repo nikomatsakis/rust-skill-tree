@@ -1,3 +1,8 @@
+[doc]
+include = [
+  "meta.toml",
+]
+
 [[group]]
 name = "fundamentals"
 label = "Rust fundamentals"

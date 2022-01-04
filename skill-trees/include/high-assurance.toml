@@ -1,3 +1,7 @@
+[doc]
+include = [
+  "compiler.toml",
+]
 
 [[group]]
 name = "high-assurance"

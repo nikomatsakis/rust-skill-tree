@@ -1,3 +1,7 @@
+[doc]
+include = [
+  "onboarding.toml",
+]
 
 [[group]]
 name = "well-integrated-into-internet-services"
