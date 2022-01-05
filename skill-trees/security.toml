@@ -50,6 +50,7 @@ items = [
 name = "crates-secure"
 label = "Security of Rust crates"
 requires = [
+    "core-secure",
 ]
 description = [
   "Authors of crates on crates.io are able to ensure their own crates security",
