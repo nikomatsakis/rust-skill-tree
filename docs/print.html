@@ -76,7 +76,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="welcome.html"><strong aria-hidden="true">1.</strong> Welcome!</a></li><li class="chapter-item expanded "><a href="structure.html"><strong aria-hidden="true">2.</strong> Structure of the tree</a></li><li class="chapter-item expanded "><a href="service-author.html"><strong aria-hidden="true">3.</strong> Authors of internet services</a></li><li class="chapter-item expanded "><a href="service-client.html"><strong aria-hidden="true">4.</strong> Clients of internet services</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="welcome.html"><strong aria-hidden="true">1.</strong> Welcome!</a></li><li class="chapter-item expanded "><a href="structure.html"><strong aria-hidden="true">2.</strong> Structure of the tree</a></li><li class="chapter-item expanded "><a href="service-author.html"><strong aria-hidden="true">3.</strong> 🎯 Rust widely used to build internet services</a></li><li class="chapter-item expanded "><a href="security.html"><strong aria-hidden="true">4.</strong> 🎯 Rust is highly secure</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -153,11 +153,24 @@
 <li>Various <em>work items</em> that must be completed.</li>
 </ul>
 <p>Many of the groups and items are themselves links to other skill trees or web pages that give more detail.</p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="main-tree"><a class="header" href="#main-tree">Main tree</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="-rust-widely-used-to-build-internet-services"><a class="header" href="#-rust-widely-used-to-build-internet-services">🎯 Rust widely used to build internet services</a></h1>
+<h2 id="shiny-future"><a class="header" href="#shiny-future">Shiny future</a></h2>
+<p>This page describes a tree of work that aims to make Rust an excellent choice for building internet services. These services are the backbone of the internet today. Since they support so much traffic, service authors highly value both peak performance but also predictability. Rust is a good choice here because it offers performance comparable to C++ without the high tail latencies and variablity typically introduced by garbage collectors. Rust also offers stronger safety guarantees even than garbage collected languages like Java or Go, since its type system rules out data races. Furthermore, Rust's focus on reliability winds up producing fewer bugs overall, resulting in less time spent responding to customer issues and more time creating compelling features. Finally, because people love using Rust, teams find that they are able to recruit quality engineers more easily.</p>
+<h2 id="status-quo-as-of-january-2022"><a class="header" href="#status-quo-as-of-january-2022">Status quo as of January 2022</a></h2>
+<p>In practice, though, Rust today has several shortcomings that can make it a less appealing choice. Other languages offer stronger tooling for debugging development systems and monitoring production systems. Rust's current learning curve means that new developers, especially those who are less experienced overall, have a harder time coming up to speed. Even once people are accustomed to using Rust, they typically spend more time figuring out how to encode something in Rust than they would if they were using some other language.</p>
+<p>Async Rust, which uses user-space primitives to manage concurrency rather than relying on the kernel, is of particular importance in this domain. Unfortunately, it is also one of the areas where Rust needs the most work. Expressing common patterns in Async Rust require the type system to be extended in non-trivial ways (even if users will ultimately not have to be aware of those extensions), which in turn requires improving the compiler's implementation (which is having trouble scaling to that )</p>
 <a href="service-author.svg">
 <img src="service-author.svg"></img>
-</a><div style="break-before: page; page-break-before: always;"></div><h1 id="clients-of-internet-services"><a class="header" href="#clients-of-internet-services">Clients of internet services</a></h1>
-
+</a><div style="break-before: page; page-break-before: always;"></div><h1 id="-rust-is-highly-secure"><a class="header" href="#-rust-is-highly-secure">🎯 Rust is highly secure</a></h1>
+<h2 id="shiny-future-1"><a class="header" href="#shiny-future-1">Shiny future</a></h2>
+<p>This page describes a tree of work that needs to be done in order to ensure that Rust is <em>highly secure</em>, meaning that people using Rust rarely -- if ever -- experience security vulnerabilities or issues. As a consequences of having fewer security vulnerabilities, companies will then be able to refocus the resources they used to devote to fuzzing and other &quot;small scale&quot; prevention measures on adopting higher-level security guarantees.</p>
+<h2 id="status-quo-as-of-january-2022-1"><a class="header" href="#status-quo-as-of-january-2022-1">Status quo as of January 2022</a></h2>
+<p>Unfortunately, though, a fair bit of work remains before we have realized that vision. </p>
+<p>At the core level, the compiler and language have a number of known soundness bugs. Much of Rust's core libraries are based around unsafe code, but we lack definitive rules for what unsafe code is allowed to do, to say nothing of effective tooling for checking that code follows those rules. Rust's support for formal verification is also less advanced than other languages, and hindered by the lack of a clear semantics. </p>
+<p>Like most modern langauges, Rust offers a rich ecosystem of libraries called crates. These crates are readily accessible on crates.io. Other packaging systems, however, have suffered from high-profile examples of trojan horses or malicious packaging, and crates.io has few defenses against that sort of thing. Users frequently report difficulty in selecting the right crate from the many choices available. Rust's packaging tool and language design includes a number of potentially unexpected vectors through malicious code can be incorporated, such as the build.rs preprocessing step or procedural macros.</p>
+<a href="security.svg">
+<img src="security.svg"></img>
+</a>
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">

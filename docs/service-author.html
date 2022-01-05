@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Authors of internet services - a Rust skill tree</title>
+        <title>🎯 Rust widely used to build internet services - a Rust skill tree</title>
         <!-- Custom HTML head -->
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
@@ -75,7 +75,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="welcome.html"><strong aria-hidden="true">1.</strong> Welcome!</a></li><li class="chapter-item expanded "><a href="structure.html"><strong aria-hidden="true">2.</strong> Structure of the tree</a></li><li class="chapter-item expanded "><a href="service-author.html" class="active"><strong aria-hidden="true">3.</strong> Authors of internet services</a></li><li class="chapter-item expanded "><a href="service-client.html"><strong aria-hidden="true">4.</strong> Clients of internet services</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="welcome.html"><strong aria-hidden="true">1.</strong> Welcome!</a></li><li class="chapter-item expanded "><a href="structure.html"><strong aria-hidden="true">2.</strong> Structure of the tree</a></li><li class="chapter-item expanded "><a href="service-author.html" class="active"><strong aria-hidden="true">3.</strong> 🎯 Rust widely used to build internet services</a></li><li class="chapter-item expanded "><a href="security.html"><strong aria-hidden="true">4.</strong> 🎯 Rust is highly secure</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -134,7 +134,12 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="main-tree"><a class="header" href="#main-tree">Main tree</a></h1>
+                        <h1 id="-rust-widely-used-to-build-internet-services"><a class="header" href="#-rust-widely-used-to-build-internet-services">🎯 Rust widely used to build internet services</a></h1>
+<h2 id="shiny-future"><a class="header" href="#shiny-future">Shiny future</a></h2>
+<p>This page describes a tree of work that aims to make Rust an excellent choice for building internet services. These services are the backbone of the internet today. Since they support so much traffic, service authors highly value both peak performance but also predictability. Rust is a good choice here because it offers performance comparable to C++ without the high tail latencies and variablity typically introduced by garbage collectors. Rust also offers stronger safety guarantees even than garbage collected languages like Java or Go, since its type system rules out data races. Furthermore, Rust's focus on reliability winds up producing fewer bugs overall, resulting in less time spent responding to customer issues and more time creating compelling features. Finally, because people love using Rust, teams find that they are able to recruit quality engineers more easily.</p>
+<h2 id="status-quo-as-of-january-2022"><a class="header" href="#status-quo-as-of-january-2022">Status quo as of January 2022</a></h2>
+<p>In practice, though, Rust today has several shortcomings that can make it a less appealing choice. Other languages offer stronger tooling for debugging development systems and monitoring production systems. Rust's current learning curve means that new developers, especially those who are less experienced overall, have a harder time coming up to speed. Even once people are accustomed to using Rust, they typically spend more time figuring out how to encode something in Rust than they would if they were using some other language.</p>
+<p>Async Rust, which uses user-space primitives to manage concurrency rather than relying on the kernel, is of particular importance in this domain. Unfortunately, it is also one of the areas where Rust needs the most work. Expressing common patterns in Async Rust require the type system to be extended in non-trivial ways (even if users will ultimately not have to be aware of those extensions), which in turn requires improving the compiler's implementation (which is having trouble scaling to that )</p>
 <a href="service-author.svg">
 <img src="service-author.svg"></img>
 </a>
@@ -145,7 +150,7 @@
                             <a rel="prev" href="structure.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
-                            <a rel="next" href="service-client.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next" href="security.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
                         <div style="clear: both"></div>
@@ -157,7 +162,7 @@
                     <a rel="prev" href="structure.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
-                    <a rel="next" href="service-client.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next" href="security.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
             </nav>

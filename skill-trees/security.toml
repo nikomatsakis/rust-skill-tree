@@ -1,0 +1,107 @@
+[graphviz]
+rankdir = "TD"
+
+[doc]
+include = [
+  "include/meta.toml",
+]
+
+[[group]]
+name = "goal-security"
+label = "🎯 Rust is highly secure"
+requires = [
+    "crates-secure",
+    "crates.io-secure",
+    "security-response",
+]
+description = [
+    "People using Rust rarely -- if ever -- experience security vulnerabilities or issues",
+    "In companies using Rust widely, security engineers are able to refocus their attention on higher-level security issues",
+]
+items = []
+
+[[group]]
+name = "security-response"
+label = "Effective security response"
+requires = [
+]
+description = [
+  "When issues do arise with a Rust crate, people know how to report them, and crate authors effectively respond to them",
+]
+items = [
+    { label = "Support program for crate authors who have security issues reported to them" },
+    { label = "Coordinated disclosure of security issues for Rust" },
+]
+
+[[group]]
+name = "crates.io-secure"
+label = "Security of cargo and crates.io"
+requires = [
+]
+description = [
+  "People can choose crates from crates.io without fear of vulnerabilities or trojans",
+  "Authors can publish code in crates on crates.io with confidence that their users will receive the same code",
+]
+items = [
+    { label = "build.rs and procedural macros can be sandboxed" },
+]
+
+[[group]]
+name = "crates-secure"
+label = "Security of Rust crates"
+requires = [
+]
+description = [
+  "Authors of crates on crates.io are able to ensure their own crates security",
+  "Crates on crates.io maintain strong security practices",
+]
+items = [
+]
+
+[[group]]
+name = "core-secure"
+label = "Security of Rust and Rust crates"
+requires = [
+    "safe-rust",
+    "unsafe-rust",
+]
+description = [
+  "Programs written in Rust do not have memory safety issues in practice",
+  "People are unable to produce a crash using only safe Rust and the standard library",
+]
+items = [
+]
+
+[[group]]
+name = "safe-rust"
+label = "Safe Rust security"
+requires = [
+]
+description = [
+    "MIR has a formal model that has been proven sound",
+    "We have high confidence that Rust's MIR toolchain matches this model",
+]
+items = [
+    { label = "Soundness conformance test suite" },
+    { label = "Develop formal model" },
+    { label = "Rearchitect core parts of compiler for clarity, flexibility" },
+    { label = "Fixing known soundness bugs" },
+]
+
+[[group]]
+name = "unsafe-rust"
+label = "Unsafe Rust security"
+requires = [
+]
+description = [
+    "The soundness rules for unsafe code are understood and followed by authors of unsafe Rust code",
+    "Tooling to dynamically test soundness of unsafe code is accessible and widely used",
+    "Tooling to statically prove soundness of unsafe code is available",
+    "Core Rust crates that have soundness proofs",
+]
+items = [
+    { label = "Unsafe code guidelines" },
+    { label = "Sanitizers and other dynamic testers for UB" },
+    { label = "Model checkers and Rust theorem provers" },
+    { label = "Standard library specification and proofs" },
+]

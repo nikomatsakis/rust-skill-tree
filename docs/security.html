@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Clients of internet services - a Rust skill tree</title>
+        <title>🎯 Rust is highly secure - a Rust skill tree</title>
         <!-- Custom HTML head -->
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
@@ -75,7 +75,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="welcome.html"><strong aria-hidden="true">1.</strong> Welcome!</a></li><li class="chapter-item expanded "><a href="structure.html"><strong aria-hidden="true">2.</strong> Structure of the tree</a></li><li class="chapter-item expanded "><a href="service-author.html"><strong aria-hidden="true">3.</strong> Authors of internet services</a></li><li class="chapter-item expanded "><a href="service-client.html" class="active"><strong aria-hidden="true">4.</strong> Clients of internet services</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="welcome.html"><strong aria-hidden="true">1.</strong> Welcome!</a></li><li class="chapter-item expanded "><a href="structure.html"><strong aria-hidden="true">2.</strong> Structure of the tree</a></li><li class="chapter-item expanded "><a href="service-author.html"><strong aria-hidden="true">3.</strong> 🎯 Rust widely used to build internet services</a></li><li class="chapter-item expanded "><a href="security.html" class="active"><strong aria-hidden="true">4.</strong> 🎯 Rust is highly secure</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -134,8 +134,16 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="clients-of-internet-services"><a class="header" href="#clients-of-internet-services">Clients of internet services</a></h1>
-
+                        <h1 id="-rust-is-highly-secure"><a class="header" href="#-rust-is-highly-secure">🎯 Rust is highly secure</a></h1>
+<h2 id="shiny-future"><a class="header" href="#shiny-future">Shiny future</a></h2>
+<p>This page describes a tree of work that needs to be done in order to ensure that Rust is <em>highly secure</em>, meaning that people using Rust rarely -- if ever -- experience security vulnerabilities or issues. As a consequences of having fewer security vulnerabilities, companies will then be able to refocus the resources they used to devote to fuzzing and other &quot;small scale&quot; prevention measures on adopting higher-level security guarantees.</p>
+<h2 id="status-quo-as-of-january-2022"><a class="header" href="#status-quo-as-of-january-2022">Status quo as of January 2022</a></h2>
+<p>Unfortunately, though, a fair bit of work remains before we have realized that vision. </p>
+<p>At the core level, the compiler and language have a number of known soundness bugs. Much of Rust's core libraries are based around unsafe code, but we lack definitive rules for what unsafe code is allowed to do, to say nothing of effective tooling for checking that code follows those rules. Rust's support for formal verification is also less advanced than other languages, and hindered by the lack of a clear semantics. </p>
+<p>Like most modern langauges, Rust offers a rich ecosystem of libraries called crates. These crates are readily accessible on crates.io. Other packaging systems, however, have suffered from high-profile examples of trojan horses or malicious packaging, and crates.io has few defenses against that sort of thing. Users frequently report difficulty in selecting the right crate from the many choices available. Rust's packaging tool and language design includes a number of potentially unexpected vectors through malicious code can be incorporated, such as the build.rs preprocessing step or procedural macros.</p>
+<a href="security.svg">
+<img src="security.svg"></img>
+</a>
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
