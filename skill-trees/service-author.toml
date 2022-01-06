@@ -18,7 +18,7 @@ description = [
   "Faster response times",
   "Ratio of P99.99 to P50 latencies is lower",
   "Data centers require fewer resources to sustain same level of traffic",
-  "Rate of security vulnerabilities and serious bugs is dramatically reduced",
+  "Common classes of security vulnerabilities are eliminated or significantly reduced",
   "Improved employee retention and ability to recruit",
 ]
 items = []
