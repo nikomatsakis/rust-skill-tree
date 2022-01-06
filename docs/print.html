@@ -76,7 +76,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="welcome.html"><strong aria-hidden="true">1.</strong> Welcome!</a></li><li class="chapter-item expanded "><a href="structure.html"><strong aria-hidden="true">2.</strong> Structure of the tree</a></li><li class="chapter-item expanded "><a href="service-author.html"><strong aria-hidden="true">3.</strong> 🎯 Rust widely used to build internet services</a></li><li class="chapter-item expanded "><a href="security.html"><strong aria-hidden="true">4.</strong> 🎯 Rust is highly secure</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="welcome.html"><strong aria-hidden="true">1.</strong> Welcome!</a></li><li class="chapter-item expanded "><a href="structure.html"><strong aria-hidden="true">2.</strong> Structure of the tree</a></li><li class="chapter-item expanded "><a href="service-author.html"><strong aria-hidden="true">3.</strong> 🎯 Rust widely used to build internet services</a></li><li class="chapter-item expanded "><a href="security.html"><strong aria-hidden="true">4.</strong> 🎯 Rust is highly secure</a></li><li class="chapter-item expanded "><a href="iot.html"><strong aria-hidden="true">5.</strong> 🎯 Rust is the backbone of IOT</a></li><li class="chapter-item expanded "><a href="kernel.html"><strong aria-hidden="true">6.</strong> 🎯 Rust is used in many kernels and drivers</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -158,7 +158,11 @@
 <p>This page describes a tree of work that aims to make Rust an excellent choice for building internet services. These services are the backbone of the internet today. Since they support so much traffic, service authors highly value both peak performance but also predictability. Rust is a good choice here because it offers performance comparable to C++ without the high tail latencies and variablity typically introduced by garbage collectors. Rust also offers stronger safety guarantees even than garbage collected languages like Java or Go, since its type system rules out data races. Furthermore, Rust's focus on reliability winds up producing fewer bugs overall, resulting in less time spent responding to customer issues and more time creating compelling features. Finally, because people love using Rust, teams find that they are able to recruit quality engineers more easily.</p>
 <h2 id="status-quo-as-of-january-2022"><a class="header" href="#status-quo-as-of-january-2022">Status quo as of January 2022</a></h2>
 <p>In practice, though, Rust today has several shortcomings that can make it a less appealing choice. Other languages offer stronger tooling for debugging development systems and monitoring production systems. Rust's current learning curve means that new developers, especially those who are less experienced overall, have a harder time coming up to speed. Even once people are accustomed to using Rust, they typically spend more time figuring out how to encode something in Rust than they would if they were using some other language.</p>
-<p>Async Rust, which uses user-space primitives to manage concurrency rather than relying on the kernel, is of particular importance in this domain. Unfortunately, it is also one of the areas where Rust needs the most work. Expressing common patterns in Async Rust require the type system to be extended in non-trivial ways (even if users will ultimately not have to be aware of those extensions), which in turn requires improving the compiler's implementation (which is having trouble scaling to that )</p>
+<p>Async Rust, which uses user-space primitives to manage concurrency rather than relying on the kernel, is of particular importance in this domain. Unfortunately, it is also one of the areas where Rust needs the most work. Expressing common patterns in Async Rust require the type system to be extended in non-trivial ways (even if users will ultimately not have to be aware of those extensions), which in turn requires improving the compiler's implementation (which is having trouble scaling to those requirements).</p>
+<h2 id="where-we-want-to-be-by-summer-2022"><a class="header" href="#where-we-want-to-be-by-summer-2022">Where we want to be by summer 2022</a></h2>
+<p>FIXME -- identify highest priority items and what we can do to improve them in short term :)</p>
+<h2 id="where-we-want-to-ultimately-be"><a class="header" href="#where-we-want-to-ultimately-be">Where we want to ultimately be</a></h2>
+<p>FIXME -- describe what it feels like when all the things below are done :)</p>
 <a href="service-author.svg">
 <img src="service-author.svg"></img>
 </a><div style="break-before: page; page-break-before: always;"></div><h1 id="-rust-is-highly-secure"><a class="header" href="#-rust-is-highly-secure">🎯 Rust is highly secure</a></h1>
@@ -170,7 +174,9 @@
 <p>Like most modern langauges, Rust offers a rich ecosystem of libraries called crates. These crates are readily accessible on crates.io. Other packaging systems, however, have suffered from high-profile examples of trojan horses or malicious packaging, and crates.io has few defenses against that sort of thing. Users frequently report difficulty in selecting the right crate from the many choices available. Rust's packaging tool and language design includes a number of potentially unexpected vectors through malicious code can be incorporated, such as the build.rs preprocessing step or procedural macros.</p>
 <a href="security.svg">
 <img src="security.svg"></img>
-</a>
+</a><div style="break-before: page; page-break-before: always;"></div><h1 id="-rust-is-the-backbone-of-iot"><a class="header" href="#-rust-is-the-backbone-of-iot">🎯 Rust is the backbone of IOT</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="-rust-is-used-in-many-kernels-and-drivers"><a class="header" href="#-rust-is-used-in-many-kernels-and-drivers">🎯 Rust is used in many kernels and drivers</a></h1>
+
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">

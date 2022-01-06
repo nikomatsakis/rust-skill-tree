@@ -12,25 +12,25 @@
 <!-- goal&#45;internet&#45;services -->
 <g id="node1" class="node">
 <title>goal&#45;internet&#45;services</title>
-<polygon fill="darkgoldenrod" stroke="transparent" points="248,-1425 248,-1449 857,-1449 857,-1425 248,-1425"/>
-<polygon fill="none" stroke="black" points="248,-1425 248,-1449 857,-1449 857,-1425 248,-1425"/>
+<polygon fill="darkgoldenrod" stroke="transparent" points="209,-1425 209,-1449 896,-1449 896,-1425 209,-1425"/>
+<polygon fill="none" stroke="black" points="209,-1425 209,-1449 896,-1449 896,-1425 209,-1425"/>
 <text text-anchor="start" x="324" y="-1433.2" font-family="Times,serif" font-size="16.00">🎯 Rust a common choice for building internet services</text>
-<polygon fill="#ffb90f" stroke="transparent" points="248,-1399 248,-1423 857,-1423 857,-1399 248,-1399"/>
-<polygon fill="none" stroke="black" points="248,-1399 248,-1423 857,-1423 857,-1399 248,-1399"/>
+<polygon fill="#ffb90f" stroke="transparent" points="209,-1399 209,-1423 896,-1423 896,-1399 209,-1399"/>
+<polygon fill="none" stroke="black" points="209,-1399 209,-1423 896,-1423 896,-1399 209,-1399"/>
 <text text-anchor="start" x="461.5" y="-1407.2" font-family="Times,serif" font-size="16.00">Faster response times</text>
-<polygon fill="#ffb90f" stroke="transparent" points="248,-1373 248,-1397 857,-1397 857,-1373 248,-1373"/>
-<polygon fill="none" stroke="black" points="248,-1373 248,-1397 857,-1397 857,-1373 248,-1373"/>
+<polygon fill="#ffb90f" stroke="transparent" points="209,-1373 209,-1397 896,-1397 896,-1373 209,-1373"/>
+<polygon fill="none" stroke="black" points="209,-1373 209,-1397 896,-1397 896,-1373 209,-1373"/>
 <text text-anchor="start" x="384" y="-1381.2" font-family="Times,serif" font-size="16.00">Ratio of P99.99 to P50 latencies is lower</text>
-<polygon fill="#ffb90f" stroke="transparent" points="248,-1347 248,-1371 857,-1371 857,-1347 248,-1347"/>
-<polygon fill="none" stroke="black" points="248,-1347 248,-1371 857,-1371 857,-1347 248,-1347"/>
+<polygon fill="#ffb90f" stroke="transparent" points="209,-1347 209,-1371 896,-1371 896,-1347 209,-1347"/>
+<polygon fill="none" stroke="black" points="209,-1347 209,-1371 896,-1371 896,-1347 209,-1347"/>
 <text text-anchor="start" x="270.5" y="-1355.2" font-family="Times,serif" font-size="16.00">Data centers require fewer resources to sustain same level of traffic</text>
-<polygon fill="#ffb90f" stroke="transparent" points="248,-1321 248,-1345 857,-1345 857,-1321 248,-1321"/>
-<polygon fill="none" stroke="black" points="248,-1321 248,-1345 857,-1345 857,-1321 248,-1321"/>
-<text text-anchor="start" x="252" y="-1329.2" font-family="Times,serif" font-size="16.00">Rate of security vulnerabilities and serious bugs is dramatically reduced</text>
-<polygon fill="#ffb90f" stroke="transparent" points="248,-1295 248,-1319 857,-1319 857,-1295 248,-1295"/>
-<polygon fill="none" stroke="black" points="248,-1295 248,-1319 857,-1319 857,-1295 248,-1295"/>
+<polygon fill="#ffb90f" stroke="transparent" points="209,-1321 209,-1345 896,-1345 896,-1321 209,-1321"/>
+<polygon fill="none" stroke="black" points="209,-1321 209,-1345 896,-1345 896,-1321 209,-1321"/>
+<text text-anchor="start" x="213" y="-1329.2" font-family="Times,serif" font-size="16.00">Common classes of security vulnerabilities are eliminated or significantly reduced</text>
+<polygon fill="#ffb90f" stroke="transparent" points="209,-1295 209,-1319 896,-1319 896,-1295 209,-1295"/>
+<polygon fill="none" stroke="black" points="209,-1295 209,-1319 896,-1319 896,-1295 209,-1295"/>
 <text text-anchor="start" x="342" y="-1303.2" font-family="Times,serif" font-size="16.00">Improved employee retention and ability to recruit</text>
-<polygon fill="none" stroke="black" points="244.5,-1292 244.5,-1452 859.5,-1452 859.5,-1292 244.5,-1292"/>
+<polygon fill="none" stroke="black" points="205.5,-1292 205.5,-1452 898.5,-1452 898.5,-1292 205.5,-1292"/>
 </g>
 <!-- prod&#45;tooling -->
 <g id="node2" class="node">
