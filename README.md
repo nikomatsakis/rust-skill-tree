@@ -5,7 +5,6 @@
 This repository is an attempt to wrap my brain around the "state of Rust". It consists of various interlinked [skill trees]. You can [read about them here][here]. 
 
 [skill trees]: https://github.com/nikomatsakis/skill-tree
-[`main.svg`]: https://raw.githubusercontent.com/nikomatsakis/rust-skill-tree/main/src/main.svg
 [here]: https://nikomatsakis.github.io/rust-skill-tree
 
 ## Warning: Work in progress
