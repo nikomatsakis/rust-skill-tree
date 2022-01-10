@@ -13,6 +13,7 @@ label = "🎯 Rust a common choice for building internet services"
 requires = [
   "onboarding-time",
   "prod-tooling",
+  "dev-tooling",
 ]
 description = [
   "Faster response times",
