@@ -208,14 +208,8 @@
 <!-- formal&#45;methods&#45;tooling&#45;&gt;semi&#45;stable&#45;apis -->
 <g id="edge5" class="edge">
 <title>formal&#45;methods&#45;tooling&#45;&gt;semi&#45;stable&#45;apis</title>
-<path fill="none" stroke="black" d="M901.78,-482.75C901.71,-470.03 901.76,-457.13 901.91,-444.66"/>
-<polygon fill="black" stroke="black" points="905.42,-444.36 902.07,-434.31 898.42,-444.25 905.42,-444.36"/>
-</g>
-<!-- formal&#45;methods&#45;tooling&#45;&gt;semi&#45;stable&#45;apis -->
-<g id="edge7" class="edge">
-<title>formal&#45;methods&#45;tooling&#45;&gt;semi&#45;stable&#45;apis</title>
-<path fill="none" stroke="black" d="M915.22,-482.75C915.29,-470.03 915.24,-457.13 915.09,-444.66"/>
-<polygon fill="black" stroke="black" points="918.58,-444.25 914.93,-434.31 911.58,-444.36 918.58,-444.25"/>
+<path fill="none" stroke="black" d="M908.5,-482.75C908.5,-470.03 908.5,-457.13 908.5,-444.66"/>
+<polygon fill="black" stroke="black" points="912,-444.31 908.5,-434.31 905,-444.31 912,-444.31"/>
 </g>
 <!-- fundamentals -->
 <g id="node5" class="node">
