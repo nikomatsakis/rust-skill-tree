@@ -4,8 +4,8 @@ include = [
 ]
 
 [[group]]
-name = "high-assurance"
-label = "High assurance Rust"
+name = "formal-methods-tooling"
+label = "Tooling for formal methods"
 requires = [
   "semi-stable-apis",
 ]

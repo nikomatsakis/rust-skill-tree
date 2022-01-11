@@ -1,0 +1,23 @@
+[graphviz]
+rankdir = "TD"
+
+[doc]
+include = [
+  "include/safe-rust-correct.toml",
+  "include/formal-methods-tooling.toml",
+  "include/formal-methods-tooling.toml",
+]
+
+[[group]]
+name = "goal-high-assurance"
+label = "🎯 Rust has strong support for formal methods tooling"
+requires = [
+  "safe-rust",
+  "formal-methods-tooling",
+  "formal-methods-tooling",
+]
+description = [
+    "Able to detect many more bugs during development ('shift left')",
+    "Able to evolve services while retaining strong correctness guarantees",
+]
+items = []

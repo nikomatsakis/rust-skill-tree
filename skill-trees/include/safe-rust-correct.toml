@@ -1,0 +1,24 @@
+[doc]
+include = [
+    "unsafe-rust-correct.toml",
+    "formal-methods-tooling.toml",
+    "meta.toml",
+]
+
+[[group]]
+name = "safe-rust"
+label = "Safe Rust security"
+requires = [
+    "unsafe-rust",
+    "formal-methods-tooling",
+]
+description = [
+    "MIR has a formal model that has been proven sound",
+    "We have high confidence that Rust's MIR toolchain matches this model",
+]
+items = [
+    { label = "Soundness conformance test suite" },
+    { label = "Develop formal model" },
+    { label = "Rearchitect core parts of compiler for clarity, flexibility" },
+    { label = "Fixing known soundness bugs" },
+]

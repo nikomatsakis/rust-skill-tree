@@ -1,0 +1,22 @@
+[doc]
+include = [
+      "meta.toml",
+]
+
+[[group]]
+name = "unsafe-rust"
+label = "Unsafe Rust security"
+requires = [
+]
+description = [
+    "The soundness rules for unsafe code are understood and followed by authors of unsafe Rust code",
+    "Tooling to dynamically test soundness of unsafe code is accessible and widely used",
+    "Tooling to statically prove soundness of unsafe code is available",
+    "Core Rust crates that have soundness proofs",
+]
+items = [
+    { label = "Unsafe code guidelines" },
+    { label = "Sanitizers and other dynamic testers for UB" },
+    { label = "Model checkers and Rust theorem provers" },
+    { label = "Standard library specification and proofs" },
+]

@@ -3,6 +3,8 @@ rankdir = "TD"
 
 [doc]
 include = [
+  "include/safe-rust-correct.toml",
+  "include/unsafe-rust-correct.toml",
   "include/meta.toml",
 ]
 
@@ -71,38 +73,4 @@ description = [
   "People are unable to produce a crash using only safe Rust and the standard library",
 ]
 items = [
-]
-
-[[group]]
-name = "safe-rust"
-label = "Safe Rust security"
-requires = [
-]
-description = [
-    "MIR has a formal model that has been proven sound",
-    "We have high confidence that Rust's MIR toolchain matches this model",
-]
-items = [
-    { label = "Soundness conformance test suite" },
-    { label = "Develop formal model" },
-    { label = "Rearchitect core parts of compiler for clarity, flexibility" },
-    { label = "Fixing known soundness bugs" },
-]
-
-[[group]]
-name = "unsafe-rust"
-label = "Unsafe Rust security"
-requires = [
-]
-description = [
-    "The soundness rules for unsafe code are understood and followed by authors of unsafe Rust code",
-    "Tooling to dynamically test soundness of unsafe code is accessible and widely used",
-    "Tooling to statically prove soundness of unsafe code is available",
-    "Core Rust crates that have soundness proofs",
-]
-items = [
-    { label = "Unsafe code guidelines" },
-    { label = "Sanitizers and other dynamic testers for UB" },
-    { label = "Model checkers and Rust theorem provers" },
-    { label = "Standard library specification and proofs" },
 ]
