@@ -3,25 +3,27 @@ rankdir = "TD"
 
 [doc]
 include = [
-  "include/prod-tooling.toml",
+  "include/production.toml",
+  "include/debugging.toml",
   "include/onboarding.toml",
+  "include/development.toml",
 ]
 
 [[group]]
 name = "goal-internet-services"
 label = "🎯 Rust a common choice for building internet services"
 requires = [
-  "onboarding-time",
-  "prod-tooling",
-  "dev-tooling",
+  "onboarding",
+  "production",
+  "debugging",
 ]
 description = [
   "Faster response times",
   "Ratio of P99.99 to P50 latencies is lower",
   "Data centers require fewer resources to sustain same level of traffic",
-  "Common classes of security vulnerabilities are eliminated or significantly reduced",
-  "Common classes of security vulnerabilities are eliminated or significantly reduced",
-  "Improved ability to recruit",
+  "Memory safety bugs, null pointer exceptions largely eliminated",
+  "Concurrency bugs and resource leaks significantly reduced",
   "Able to evolve and grow services with fewer bugs",
+  "Improved ability to recruit",
 ]
 items = []

@@ -1,22 +1,18 @@
 [doc]
 include = [
-  "dev-tooling.toml",
+  "development.toml",
   "async.toml",
   "extensible.toml",
 ]
 
 [[group]]
-name = "onboarding-time"
-label = "Smooth onboarding of Rust engineers"
+name = "onboarding"
+label = "Able to onboard engineers quickly"
 requires = [
-  "dev-tooling",
+  "development",
   "async-stack",
   "extensible",
   "easy-lang",
-]
-description = [
-  "Time to be highly productive is measured in months",
-  "Clear transition paths from other major languages",
 ]
 items = [
   { label = "Rust beginner learning materials", status = "done" },
@@ -25,3 +21,4 @@ items = [
   { label = "C++ transition path", status = "design" },
   { label = "Dynamic language transition path", status = "design" },
 ]
+

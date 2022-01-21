@@ -1,0 +1,17 @@
+[doc]
+include = [
+  "compiler.toml",
+]
+
+[[group]]
+name = "development"
+label = "Able to to fix (logic) bugs that are found during development"
+requires = [
+  "semi-stable-apis",
+]
+items = [
+  { label = "Quality Rust debugger", status = "design" },
+  { label = "Rust well integrated into common IDEs", status = "stabilization" },
+  { label = "Async runtime observability (e.g., tokio console)", status = "implementation" },
+  { label = "Profilers for CPU and memory usage", status = "design" },
+]

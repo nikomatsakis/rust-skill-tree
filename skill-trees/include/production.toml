@@ -1,17 +1,13 @@
 [doc]
-include = [
-  "dev-tooling.toml",
+debugging = [
+  "debug.toml",
 ]
 
 [[group]]
-name = "prod-tooling"
-label = "Production tooling"
+name = "production"
+label = "Able to obtain metrics and logs and inspect state of services in production"
 requires = [
-  "dev-tooling",
-]
-description = [
-  "Able to troubleshoot correctness problems that arise in production",
-  "Able to troubleshoot performance problems that arise in production",
+  "debugging",
 ]
 items = [
   { label = "Async runtime observability", status = "?" },

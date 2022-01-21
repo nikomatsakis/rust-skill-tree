@@ -4,8 +4,8 @@ include = [
 ]
 
 [[group]]
-name = "dev-tooling"
-label = "Developer tooling"
+name = "debugging"
+label = "Able to to fix (logic) bugs that are found during development"
 requires = [
   "semi-stable-apis",
 ]
