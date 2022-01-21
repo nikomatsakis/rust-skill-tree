@@ -1,18 +1,18 @@
 [doc]
 include = [
-  "core-lang.toml",
+  "expressive-lang.toml",
 ]
 
 [[group]]
 name = "async-lang"
-label = "Async I/O Fundamentals"
+label = "Rust supports Async I/O smoothly"
 description = [
   "Using Async I/O comparable in complexity to Sync I/O",
   "Access to a wide variety of useful libraries on crates.io",
   "Easy access to high performance networking",
 ]
 requires = [
-  "core-lang"
+  "expressive-lang"
 ]
 items = [
   { label = "Can use async fn everywhere", status = "implementation" },
@@ -23,7 +23,7 @@ items = [
 
 [[group]]
 name = "async-stack"
-label = "Async stack"
+label = "Rust offers a full-featured async stack"
 description = [
   "Can quickly stand up an async application",
   "Devs able to focus on 'business logic'",

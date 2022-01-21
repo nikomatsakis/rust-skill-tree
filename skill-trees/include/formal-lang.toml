@@ -1,0 +1,15 @@
+[doc]
+include = [
+  "compiler.toml",
+]
+
+[[group]]
+name = "formal-lang"
+label = "Rust has a sound, formalized foundation"
+requires = [
+  "fundamentals",
+]
+items = [
+  { label = "Proof of soundness", status = "exploration" },
+  { label = "Unsafe code guidelines", status = "design" },
+]

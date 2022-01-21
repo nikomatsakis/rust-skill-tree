@@ -13,7 +13,7 @@ include = [
 name = "goal-internet-services"
 label = "🎯 Rust a common choice for building internet services"
 requires = [
-  "onboarding",
+  "development",
   "production",
   "debugging",
 ]

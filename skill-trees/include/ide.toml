@@ -1,0 +1,16 @@
+[doc]
+include = [
+  "compiler.toml",
+]
+
+[[group]]
+name = "ide"
+label = "Top-notch IDE support"
+requires = [
+  "semi-stable-apis",
+]
+items = [
+  { label = "LSP implementation", status = "done" },
+  { label = "Shares code with compiler", status = "exploration" },
+  { label = "Plethora of refactorings", status = "implementation" },
+]

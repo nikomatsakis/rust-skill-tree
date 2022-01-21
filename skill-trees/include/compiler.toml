@@ -5,7 +5,7 @@ include = [
 
 [[group]]
 name = "fundamentals"
-label = "Rust fundamentals"
+label = "Compiler architecture is flexible and maintainable"
 description = [
   "Easy to contribute to the compiler",
   "Language semantics well understood",
@@ -14,19 +14,14 @@ description = [
 items = [
   { label = "Rearchitect traits/borrow-checking as logical predicates", status = "implementation" },
   { label = "Core Rust semantics documented", status = "exploration" },
-  { label = "Proof of soundness", status = "exploration" },
-  { label = "Unsafe code guidelines", status = "design" },
   { label = "Known soundness bugs closed", status = "design" },
 ]
 
 [[group]]
 name = "semi-stable-apis"
-label = "Semi-stable APIs"
+label = "Compiler offers semi-stable APIs that others can use"
 requires = [
   "fundamentals",
-]
-description = [
-  "Compiler offers semi-stable APIs that others can use",
 ]
 items = [
   { label = "Shared crate for representing Rust types" },

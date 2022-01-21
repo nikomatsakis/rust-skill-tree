@@ -1,0 +1,21 @@
+[doc]
+include = [
+  "compiler.toml",
+]
+
+[[group]]
+name = "easy-lang"
+label = "Rust is (more) ergonomic"
+description = [
+  "Using Rust feels smooth and convenient",
+]
+requires = [
+  "fundamentals",
+]
+items = [
+  { label = "Dynamic dispatch (dyn trait) more powerful, easier to use", status = "design" },
+  { label = "Implied bounds", status = "design" },
+  { label = "Generators", status = "exploration" },
+  { label = "Improved borrow checker", status = "exploration", href = "https://github.com/rust-lang/polonius/" },
+  { label = "View types", status = "exploration", href = "https://smallcultfollowing.com/babysteps//blog/2021/11/05/view-types/" },
+]

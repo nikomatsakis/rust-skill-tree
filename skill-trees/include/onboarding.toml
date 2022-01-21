@@ -1,15 +1,14 @@
 [doc]
 include = [
-  "development.toml",
   "async.toml",
   "extensible.toml",
+  "easy-lang.toml",
 ]
 
 [[group]]
 name = "onboarding"
 label = "Able to onboard engineers quickly"
 requires = [
-  "development",
   "async-stack",
   "extensible",
   "easy-lang",

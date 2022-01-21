@@ -1,0 +1,22 @@
+[doc]
+include = [
+  "compiler.toml",
+]
+
+[[group]]
+name = "expressive-lang"
+label = "Rust is expressive"
+description = [
+  "Rust language scales smoothly without 'complexity cliffs'",
+  "Rust able to express the patterns more complex code needs",
+]
+requires = [
+  "fundamentals",
+]
+items = [
+  { label = "Dynamic dispatch (dyn trait) more powerful, easier to use", status = "design" },
+  { label = "Specialization", status = "design" },
+  { label = "Generic associated types (GATs)", status = "implementation" },
+  { label = "Impl trait", status = "stabilization" },
+  { label = "Threaded contexts, capabilities", status = "exploration" },
+]
